@@ -1,0 +1,23 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ShoppingMaster.master.cs" Inherits="shopping_thing2.ShoppingMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <asp:Image ID="Image1" runat="server" />
+            </asp:ContentPlaceHolder>
+            <br />
+            <br />
+            Some Company Name<br />
+        </div>
+    </form>
+</body>
+</html>
