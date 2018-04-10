@@ -15,7 +15,7 @@
             width: 120px;
         }
         .auto-style3 {
-            width: 382px;
+            width: 887px;
         }
     </style>
 </head>
@@ -29,10 +29,10 @@
                             <asp:Image ID="Image1" runat="server" />
                         </td>
                         <td class="auto-style3">
-                            <asp:TextBox ID="TextBox1" runat="server" Width="357px"></asp:TextBox>
+                            <asp:TextBox ID="TextBox1" runat="server" Width="860px"></asp:TextBox>
                         </td>
                         <td>
-                            <asp:ImageButton ID="ImageButton1" runat="server" />
+                            <asp:ImageButton ID="ImageButton1" runat="server" Height="41px" ImageUrl="~/userDefinedImages/shoppingCart.png" Width="48px" />
                         </td>
                     </tr>
                     <tr>
