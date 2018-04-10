@@ -7,16 +7,60 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 120px;
+        }
+        .auto-style3 {
+            width: 382px;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                <asp:Image ID="Image1" runat="server" />
+                <table class="auto-style1">
+                    <tr>
+                        <td class="auto-style2">
+                            <asp:Image ID="Image1" runat="server" />
+                        </td>
+                        <td class="auto-style3">
+                            <asp:TextBox ID="TextBox1" runat="server" Width="357px"></asp:TextBox>
+                        </td>
+                        <td>
+                            <asp:ImageButton ID="ImageButton1" runat="server" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style2">Company Name</td>
+                        <td class="auto-style3">
+                            <asp:DropDownList ID="DropDownList1" runat="server">
+                            </asp:DropDownList>
+                        </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style2">Desciption</td>
+                        <td class="auto-style3">&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style2">&nbsp;</td>
+                        <td class="auto-style3">&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style2">&nbsp;</td>
+                        <td class="auto-style3">&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
             </asp:ContentPlaceHolder>
             <br />
-            <br />
-            Some Company Name<br />
         </div>
     </form>
 </body>
