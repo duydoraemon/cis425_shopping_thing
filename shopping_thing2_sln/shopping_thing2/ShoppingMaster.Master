@@ -19,6 +19,7 @@
         .auto-style4 {
             width: 153px;
             text-align: center;
+            color: #666666;
         }
         .auto-style9 {
             height: 95px;
@@ -32,6 +33,33 @@
         .auto-style11 {
             width: 879px;
         }
+        .auto-style12 {
+            width: 879px;
+            height: 26px;
+        }
+        .auto-style13 {
+            height: 26px;
+        }
+        .newStyle1 {
+            top: 1px;
+        }
+        .newStyle2 {
+            top: 23px;
+        }
+        .auto-style15 {
+            color: #666666;
+        }
+        .auto-style16 {
+            width: 879px;
+            height: 48px;
+        }
+        .auto-style17 {
+            height: 48px;
+        }
+        .auto-style18 {
+            width: 879px;
+            color: #666666;
+        }
     </style>
 </head>
 <body>
@@ -41,33 +69,43 @@
                 <table class="auto-style1">
                     <tr>
                         <td class="auto-style2">
-                            <asp:Image ID="Image1" runat="server" Height="86px" ImageUrl="~/userDefinedImages/companyLogo.png" Width="119px" />
+                            <asp:Image ID="Image1" runat="server" Height="86px" ImageUrl="~/userDefinedImages/companyLogo.png" Width="119px" CssClass="auto-style15" />
                         </td>
                         <td class="auto-style10">
-                            <asp:TextBox ID="TextBox1" runat="server" Width="871px" Height="33px"></asp:TextBox>
-                            <br />
-                            Filters
-                            <asp:DropDownList ID="DropDownList1" runat="server">
+                            <asp:TextBox ID="TextBox1" runat="server" Width="871px" Height="33px" CssClass="auto-style15"></asp:TextBox>
+                            <br class="auto-style15" />
+                            <span class="auto-style15">Filter By Color:&nbsp; </span>
+                            <asp:DropDownList ID="DropDownList1" runat="server" CssClass="auto-style15">
                             </asp:DropDownList>
-                        &nbsp;<asp:DropDownList ID="DropDownList2" runat="server">
+                            <span class="auto-style15">&nbsp;Sort by: </span> <asp:DropDownList ID="DropDownList2" runat="server" CssClass="auto-style15">
                             </asp:DropDownList>
                         </td>
                         <td class="auto-style9">
-                            &nbsp;&nbsp;&nbsp;
-                            <asp:ImageButton ID="ImageButton1" runat="server" Height="41px" ImageUrl="~/userDefinedImages/shoppingCartBlue.jpg" Width="49px" />
-                        &nbsp;<br />
-&nbsp;&nbsp; Cart</td>
+                            <span class="auto-style15">&nbsp;&nbsp;&nbsp;
+                            </span>
+                            <asp:ImageButton ID="ImageButton1" runat="server" Height="41px" ImageUrl="~/userDefinedImages/shoppingCartBlue.jpg" Width="49px" CssClass="auto-style15" />
+                        &nbsp;<br class="auto-style15" />
+                            <span class="auto-style15">&nbsp;&nbsp; Cart</span></td>
                     </tr>
                     <tr>
-                        <td class="auto-style4" rowspan="5">Home<br />
-                            <br />
-                            About<br />
-                            <br />
-                            Press<br />
-                            <br />
-                            Careers<br />
-                            <br />
-                            Contacts</td>
+                        <td valign="top" class="auto-style4" rowspan="13"="top" ><span class="newStyle2">
+                            
+                            <span class="auto-style15">Home</span><br class="auto-style15" />
+                            <br class="auto-style15" />
+                            <span class="auto-style15">About</span><br class="auto-style15" />
+                            <br class="auto-style15" />
+                            <span class="auto-style15">Press</span><br class="auto-style15" />
+                            <br class="auto-style15" />
+                            <span class="auto-style15">Careers</span><br class="auto-style15" />
+                            <br class="auto-style15" />
+                            <span class="auto-style15">Contacts</span></span><span class="auto-style15"> </span>
+
+                        </td>
+
+                        <td class="auto-style18">&nbsp;</td>
+                        <td class="auto-style15">&nbsp;</td>
+                    </tr>
+                    <tr>
                         <td class="auto-style11">&nbsp;</td>
                         <td>&nbsp;</td>
                     </tr>
@@ -76,22 +114,49 @@
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td class="auto-style11">&nbsp;</td>
-                        <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style11">
-                            <br />
+                        <td class="auto-style16">
                             <br />
                             <br />
                         </td>
+                        <td class="auto-style17"></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style11">&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style12"></td>
+                        <td class="auto-style13"></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style11">&nbsp;</td>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
                         <td class="auto-style11">&nbsp;</td>
                         <td>&nbsp;</td>
                     </tr>
-                </table>
+                    <tr>
+                        <td class="auto-style11">&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style11">&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style11">&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style11">&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style11">&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    </table>
             </asp:ContentPlaceHolder>
             <br />
         </div>
