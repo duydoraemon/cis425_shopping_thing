@@ -19,7 +19,7 @@
         .auto-style4 {
             width: 153px;
             text-align: center;
-            color: #666666;
+            color: #000000;
         }
         .auto-style9 {
             height: 95px;
@@ -32,6 +32,7 @@
         }
         .auto-style11 {
             width: 879px;
+            color: #000000;
         }
         .auto-style12 {
             width: 879px;
@@ -46,9 +47,6 @@
         .newStyle2 {
             top: 23px;
         }
-        .auto-style15 {
-            color: #666666;
-        }
         .auto-style16 {
             width: 879px;
             height: 48px;
@@ -56,9 +54,29 @@
         .auto-style17 {
             height: 48px;
         }
-        .auto-style18 {
+        .auto-style19 {
             width: 879px;
-            color: #666666;
+            text-align: center;
+            color: #000000;
+        }
+        .auto-style20 {
+            text-align: center;
+        }
+        .auto-style21 {
+            text-align: center;
+            width: 278px;
+        }
+        .auto-style22 {
+            text-align: center;
+            color: #000000;
+        }
+        .auto-style23 {
+            text-align: center;
+            width: 278px;
+            color: #000000;
+        }
+        .auto-style24 {
+            color: #000000;
         }
     </style>
 </head>
@@ -69,92 +87,119 @@
                 <table class="auto-style1">
                     <tr>
                         <td class="auto-style2">
-                            <asp:Image ID="Image1" runat="server" Height="86px" ImageUrl="~/userDefinedImages/companyLogo.png" Width="119px" CssClass="auto-style15" />
+                            <asp:Image ID="Image1" runat="server" Height="86px" ImageUrl="~/userDefinedImages/companyLogo.png" Width="119px" CssClass="auto-style24" />
                         </td>
                         <td class="auto-style10">
-                            <asp:TextBox ID="TextBox1" runat="server" Width="871px" Height="33px" CssClass="auto-style15"></asp:TextBox>
-                            <br class="auto-style15" />
-                            <span class="auto-style15">Filter By Color:&nbsp; </span>
-                            <asp:DropDownList ID="DropDownList1" runat="server" CssClass="auto-style15">
+                            <asp:TextBox ID="TextBox1" runat="server" Width="871px" Height="33px"></asp:TextBox>
+                            <br class="auto-style24" />
+                            <h4><span class="auto-style24">Filter By Color:&nbsp; </span>
+                            <asp:DropDownList ID="DropDownList1" runat="server">
                             </asp:DropDownList>
-                            <span class="auto-style15">&nbsp;Sort by: </span> <asp:DropDownList ID="DropDownList2" runat="server" CssClass="auto-style15">
+                                <span class="auto-style24">&nbsp;Sort by: </span> <asp:DropDownList ID="DropDownList2" runat="server">
                             </asp:DropDownList>
+                            </h4>
                         </td>
                         <td class="auto-style9">
-                            <span class="auto-style15">&nbsp;&nbsp;&nbsp;
+                            <span class="auto-style24">&nbsp;&nbsp;&nbsp;
                             </span>
-                            <asp:ImageButton ID="ImageButton1" runat="server" Height="41px" ImageUrl="~/userDefinedImages/shoppingCartBlue.jpg" Width="49px" CssClass="auto-style15" />
-                        &nbsp;<br class="auto-style15" />
-                            <span class="auto-style15">&nbsp;&nbsp; Cart</span></td>
+                            <asp:ImageButton ID="ImageButton1" runat="server" Height="41px" ImageUrl="~/userDefinedImages/shoppingCartBlue.jpg" Width="49px" CssClass="auto-style24" />
+                        &nbsp;<br class="auto-style24" />
+                            <span class="auto-style24">&nbsp;&nbsp; Cart</span></td>
                     </tr>
                     <tr>
-                        <td valign="top" class="auto-style4" rowspan="13"="top" ><span class="newStyle2">
+                        <td valign="top" class="auto-style4" rowspan="13"="top" >
+                            <h3><span class="newStyle2">
                             
-                            <span class="auto-style15">Home</span><br class="auto-style15" />
-                            <br class="auto-style15" />
-                            <span class="auto-style15">About</span><br class="auto-style15" />
-                            <br class="auto-style15" />
-                            <span class="auto-style15">Press</span><br class="auto-style15" />
-                            <br class="auto-style15" />
-                            <span class="auto-style15">Careers</span><br class="auto-style15" />
-                            <br class="auto-style15" />
-                            <span class="auto-style15">Contacts</span></span><span class="auto-style15"> </span>
+                            <span class="auto-style24">Home</span><br class="auto-style24" />
+                            <br class="auto-style24" />
+                            <span class="auto-style24">About</span><br class="auto-style24" />
+                            <br class="auto-style24" />
+                            <span class="auto-style24">Press</span><br class="auto-style24" />
+                            <br class="auto-style24" />
+                            <span class="auto-style24">Careers</span><br class="auto-style24" />
+                            <br class="auto-style24" />
+                            <span class="auto-style24">Contacts</span></span></h3>
+                            <span class="auto-style24">&nbsp;</span></td>
 
-                        </td>
-
-                        <td class="auto-style18">&nbsp;</td>
-                        <td class="auto-style15">&nbsp;</td>
+                        <td class="auto-style11">&nbsp;</td>
+                        <td class="auto-style24">you</td>
                     </tr>
                     <tr>
                         <td class="auto-style11">&nbsp;</td>
-                        <td>&nbsp;</td>
+                        <td class="auto-style24">can </td>
                     </tr>
                     <tr>
                         <td class="auto-style11">&nbsp;</td>
-                        <td>&nbsp;</td>
+                        <td class="auto-style24">add</td>
                     </tr>
                     <tr>
                         <td class="auto-style16">
-                            <br />
-                            <br />
+                            <br class="auto-style24" />
+                            <br class="auto-style24" />
                         </td>
-                        <td class="auto-style17"></td>
+                        <td class="auto-style17">more</td>
                     </tr>
                     <tr>
                         <td class="auto-style11">&nbsp;</td>
-                        <td>&nbsp;</td>
+                        <td class="auto-style24">stuff</td>
                     </tr>
                     <tr>
                         <td class="auto-style12"></td>
-                        <td class="auto-style13"></td>
+                        <td class="auto-style13">here</td>
                     </tr>
                     <tr>
                         <td class="auto-style11">&nbsp;</td>
-                        <td>&nbsp;</td>
+                        <td class="auto-style24">like</td>
                     </tr>
                     <tr>
                         <td class="auto-style11">&nbsp;</td>
-                        <td>&nbsp;</td>
+                        <td class="auto-style24">ads</td>
                     </tr>
                     <tr>
                         <td class="auto-style11">&nbsp;</td>
-                        <td>&nbsp;</td>
+                        <td class="auto-style24">or</td>
                     </tr>
                     <tr>
                         <td class="auto-style11">&nbsp;</td>
-                        <td>&nbsp;</td>
+                        <td class="auto-style24">something</td>
                     </tr>
                     <tr>
                         <td class="auto-style11">&nbsp;</td>
-                        <td>&nbsp;</td>
+                        <td class="auto-style24">&nbsp;</td>
                     </tr>
                     <tr>
-                        <td class="auto-style11">&nbsp;</td>
-                        <td>&nbsp;</td>
+                        <td class="auto-style19">
+                            <h4 class="auto-style24">Back to Top</h4>
+                        </td>
+                        <td class="auto-style24">&nbsp;</td>
                     </tr>
                     <tr>
-                        <td class="auto-style11">&nbsp;</td>
-                        <td>&nbsp;</td>
+                        <td class="auto-style11">
+                            <table style="width:100%;">
+                                <tr>
+                                    <td class="auto-style21">
+                                        <h4 class="auto-style24">Make money with us</h4>
+                                    </td>
+                                    <td class="auto-style20">
+                                        <h4 class="auto-style24">Payment Products</h4>
+                                    </td>
+                                    <td class="auto-style20">
+                                        <h4 class="auto-style24">Let Us Help you</h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style23">xxxxxxxxxx</td>
+                                    <td class="auto-style22">xxxxxxxxxxxxxx</td>
+                                    <td class="auto-style22">xxxxxxxxxx</td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style23">xxxxxxxxxxxx</td>
+                                    <td class="auto-style22">xxxxxxxx</td>
+                                    <td class="auto-style22">xxxxxxxxxx</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="auto-style24">&nbsp;</td>
                     </tr>
                     </table>
             </asp:ContentPlaceHolder>
