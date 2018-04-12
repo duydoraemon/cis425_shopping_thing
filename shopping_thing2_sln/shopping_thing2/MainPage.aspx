@@ -12,6 +12,7 @@
                             <asp:Image ID="Image1" runat="server" Height="86px" ImageUrl="~/userDefinedImages/companyLogo.png" Width="119px" CssClass="auto-style15" />
                         </td>
                         <td class="auto-style10">
+                            <h4>
                             <asp:TextBox ID="TextBox1" runat="server" Width="871px" Height="33px" CssClass="auto-style15"></asp:TextBox>
                             <br class="auto-style15" />
                             <span class="auto-style15">Filter By Color:&nbsp; </span>
@@ -22,6 +23,7 @@
                                 <asp:ListItem>Price: Low to High</asp:ListItem>
                                 <asp:ListItem>Price: High to Low</asp:ListItem>
                             </asp:DropDownList>
+                            </h4>
                         </td>
                         <td class="auto-style9">
                             <span class="auto-style15">&nbsp;&nbsp;&nbsp;
@@ -31,7 +33,8 @@
                             <span class="auto-style15">&nbsp;&nbsp; Cart</span></td>
                     </tr>
                     <tr>
-                        <td valign="top" class="auto-style4" rowspan="13"="top" ><span class="newStyle2">
+                        <td valign="top" class="auto-style4" rowspan="13"="top" >
+                            <h3><span class="newStyle2">
                             
                             <span class="auto-style15">Home</span><br class="auto-style15" />
                             <br class="auto-style15" />
@@ -42,6 +45,8 @@
                             <span class="auto-style15">Careers</span><br class="auto-style15" />
                             <br class="auto-style15" />
                             <span class="auto-style15">Contacts</span></span><span class="auto-style15"> </span>
+
+                            </h3>
 
                         </td>
 
