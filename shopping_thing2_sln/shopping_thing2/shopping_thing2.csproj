@@ -145,6 +145,7 @@
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="MainPage.aspx" />
+    <Content Include="Pictures\125-fall-in-love.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -233,6 +234,7 @@
     </Compile>
     <Compile Include="ShoppingMaster.Master.cs">
       <DependentUpon>ShoppingMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ShoppingMaster.Master.designer.cs">
       <DependentUpon>ShoppingMaster.Master</DependentUpon>
