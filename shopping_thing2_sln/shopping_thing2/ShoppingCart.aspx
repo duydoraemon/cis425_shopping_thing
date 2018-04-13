@@ -50,6 +50,7 @@
                                     <asp:ListItem>Price: Low to High</asp:ListItem>
                                     <asp:ListItem>Price: High to Low</asp:ListItem>
                             </asp:DropDownList>
+                            <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/Pictures/searchImage.png" Width="30px" />
                             </h4>
                         </td>
                         <td class="auto-style9">
