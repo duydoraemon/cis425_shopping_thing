@@ -75,55 +75,61 @@
                             <span class="auto-style24">&nbsp;</span></td>
 
                         <td class="auto-style26">&nbsp;</td>
-                        <td class="auto-style24">you</td>
+                        <td class="auto-style24">
+                            <h4>Subtotal </h4>
+                        </td>
                     </tr>
                     <tr>
                         <td class="auto-style26">
                             <h2>Shopping Cart</h2>
                         </td>
-                        <td class="auto-style24">can </td>
+                        <td class="auto-style24">
+                            <h4>Price</h4>
+                        </td>
                     </tr>
                     <tr>
                         <td class="auto-style26">&nbsp;</td>
-                        <td class="auto-style24">add</td>
+                        <td class="auto-style24">
+                            <h4>Checkout</h4>
+                        </td>
                     </tr>
                     <tr>
                         <td class="auto-style27">
-                            <asp:Image ID="Image2" runat="server" Height="69px" ImageUrl="~/Pictures/125-fall-in-love.png" Width="100px" />
+                            <asp:Image ID="Image2" runat="server" Height="69px" ImageUrl="~/Pictures/productPlaceholder.png" Width="100px" />
 &nbsp;&nbsp;&nbsp;&nbsp;
                             <asp:TextBox ID="TextBox2" runat="server" CssClass="auto-style30" Height="61px" Width="180px"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;
                             <asp:TextBox ID="TextBox3" runat="server" BackColor="White" BorderColor="White" Height="60px" Width="199px"></asp:TextBox>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <asp:DropDownList ID="DropDownList3" runat="server">
                                 <asp:ListItem>1</asp:ListItem>
                             </asp:DropDownList>
                         </td>
-                        <td class="auto-style17">more</td>
+                        <td class="auto-style17">&nbsp;</td>
                     </tr>
                     <tr>
                         <td class="auto-style26">&nbsp;</td>
-                        <td class="auto-style24">stuff</td>
+                        <td class="auto-style24">&nbsp;</td>
                     </tr>
                     <tr>
                         <td class="auto-style28"></td>
-                        <td class="auto-style13">here</td>
+                        <td class="auto-style13">&nbsp;</td>
                     </tr>
                     <tr>
                         <td class="auto-style26">&nbsp;</td>
-                        <td class="auto-style24">like</td>
+                        <td class="auto-style24">&nbsp;</td>
                     </tr>
                     <tr>
                         <td class="auto-style26">&nbsp;</td>
-                        <td class="auto-style24">ads</td>
+                        <td class="auto-style24">&nbsp;</td>
                     </tr>
                     <tr>
                         <td class="auto-style26">&nbsp;</td>
-                        <td class="auto-style24">or</td>
+                        <td class="auto-style24">&nbsp;</td>
                     </tr>
                     <tr>
                         <td class="auto-style26">&nbsp;</td>
-                        <td class="auto-style24">something</td>
+                        <td class="auto-style24">&nbsp;</td>
                     </tr>
                     <tr>
                         <td class="auto-style26">&nbsp;</td>
