@@ -14,8 +14,7 @@
                         <td class="auto-style10">
                             <h4>
                             <asp:TextBox ID="TextBox1" runat="server" Width="871px" Height="33px" CssClass="auto-style15"></asp:TextBox>
-                            <br class="auto-style15" />
-                            <span class="auto-style15">Filter By Category:&nbsp; </span>
+                                <span class="auto-style15">Filter By Category:&nbsp; </span>
                             <asp:DropDownList ID="DropDownList1" runat="server" CssClass="auto-style15">
                             </asp:DropDownList>
                             <span class="auto-style15">&nbsp;Sort by: </span> <asp:DropDownList ID="DropDownList2" runat="server" CssClass="auto-style15">
@@ -23,7 +22,9 @@
                                 <asp:ListItem>Price: Low to High</asp:ListItem>
                                 <asp:ListItem>Price: High to Low</asp:ListItem>
                             </asp:DropDownList>
-                            </h4>
+                            &nbsp;
+                            <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/Pictures/searchImage.png" Width="30px" />
+                        &nbsp;</h4>
                         </td>
                         <td class="auto-style9">
                             <span class="auto-style15">&nbsp;&nbsp;&nbsp;
