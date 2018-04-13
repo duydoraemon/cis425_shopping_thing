@@ -106,7 +106,9 @@
                                 <asp:ListItem>1</asp:ListItem>
                             </asp:DropDownList>
                         </td>
-                        <td class="auto-style17">&nbsp;</td>
+                        <td class="auto-style17">
+                            <asp:Button ID="Button1" runat="server" Text="Cancel Purchase" />
+                        </td>
                     </tr>
                     <tr>
                         <td class="auto-style26">&nbsp;</td>
