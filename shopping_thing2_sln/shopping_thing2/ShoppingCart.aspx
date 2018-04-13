@@ -46,6 +46,9 @@
                             <asp:DropDownList ID="DropDownList1" runat="server">
                             </asp:DropDownList>
                                 <span class="auto-style24">&nbsp;Sort by: </span> <asp:DropDownList ID="DropDownList2" runat="server">
+                                    <asp:ListItem>Relevance</asp:ListItem>
+                                    <asp:ListItem>Price: Low to High</asp:ListItem>
+                                    <asp:ListItem>Price: High to Low</asp:ListItem>
                             </asp:DropDownList>
                             </h4>
                         </td>
