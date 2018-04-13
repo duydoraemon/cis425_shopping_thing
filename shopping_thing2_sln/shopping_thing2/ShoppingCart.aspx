@@ -42,7 +42,7 @@
                         <td class="auto-style25">
                             <asp:TextBox ID="TextBox1" runat="server" Width="871px" Height="33px"></asp:TextBox>
                             <br class="auto-style24" />
-                            <h4><span class="auto-style24">Filter By Color:&nbsp; </span>
+                            <h4><span class="auto-style24">Filter By Category:&nbsp; </span>
                             <asp:DropDownList ID="DropDownList1" runat="server">
                             </asp:DropDownList>
                                 <span class="auto-style24">&nbsp;Sort by: </span> <asp:DropDownList ID="DropDownList2" runat="server">
