@@ -87,7 +87,7 @@
                         <td class="auto-style26">
                             <h2>Shopping Cart</h2>
                         </td>
-                        <td class="auto-style24" rowspan="13">
+                        <td class="auto-style24" rowspan="13" valign="top">
                             <h4>Subtotal </h4>
                             <h4>Price</h4>
                             <h4>Checkout</h4>
