@@ -16,5 +16,15 @@ namespace shopping_thing2
             TextBox3.BorderWidth = 0;
             TextBox3.Text = "Product Price";
         }
+
+        /* records array of selected items
+         * navigates user to shoppingCart page */
+        protected void img_shoppingCart_Click(object sender, ImageClickEventArgs e)
+        {
+            //records itemsArray
+
+            //nagivates to shoppingCart Page
+            Response.Redirect("ShoppingCart.aspx", true);
+        }
     }
 }

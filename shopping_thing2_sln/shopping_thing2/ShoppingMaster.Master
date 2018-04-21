@@ -97,6 +97,7 @@
                             </asp:DropDownList>
                                 <span class="auto-style24">&nbsp;Sort by: </span> <asp:DropDownList ID="DropDownList2" runat="server">
                             </asp:DropDownList>
+                            <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/Pictures/searchImage.png" Width="30px" />
                             </h4>
                         </td>
                         <td class="auto-style9">
@@ -122,46 +123,46 @@
                             <span class="auto-style24">&nbsp;</span></td>
 
                         <td class="auto-style11">&nbsp;</td>
-                        <td class="auto-style24">you</td>
+                        <td class="auto-style24">&nbsp;</td>
                     </tr>
                     <tr>
                         <td class="auto-style11">&nbsp;</td>
-                        <td class="auto-style24">can </td>
+                        <td class="auto-style24">&nbsp;</td>
                     </tr>
                     <tr>
                         <td class="auto-style11">&nbsp;</td>
-                        <td class="auto-style24">add</td>
+                        <td class="auto-style24">&nbsp;</td>
                     </tr>
                     <tr>
                         <td class="auto-style16">
                             <br class="auto-style24" />
                             <br class="auto-style24" />
                         </td>
-                        <td class="auto-style17">more</td>
+                        <td class="auto-style17">&nbsp;</td>
                     </tr>
                     <tr>
                         <td class="auto-style11">&nbsp;</td>
-                        <td class="auto-style24">stuff</td>
+                        <td class="auto-style24">&nbsp;</td>
                     </tr>
                     <tr>
                         <td class="auto-style12"></td>
-                        <td class="auto-style13">here</td>
+                        <td class="auto-style13">&nbsp;</td>
                     </tr>
                     <tr>
                         <td class="auto-style11">&nbsp;</td>
-                        <td class="auto-style24">like</td>
+                        <td class="auto-style24">&nbsp;</td>
                     </tr>
                     <tr>
                         <td class="auto-style11">&nbsp;</td>
-                        <td class="auto-style24">ads</td>
+                        <td class="auto-style24">&nbsp;</td>
                     </tr>
                     <tr>
                         <td class="auto-style11">&nbsp;</td>
-                        <td class="auto-style24">or</td>
+                        <td class="auto-style24">&nbsp;</td>
                     </tr>
                     <tr>
                         <td class="auto-style11">&nbsp;</td>
-                        <td class="auto-style24">something</td>
+                        <td class="auto-style24">&nbsp;</td>
                     </tr>
                     <tr>
                         <td class="auto-style11">&nbsp;</td>

@@ -29,7 +29,7 @@
                         <td class="auto-style9">
                             <span class="auto-style15">&nbsp;&nbsp;&nbsp;
                             </span>
-                            <asp:ImageButton ID="ImageButton1" runat="server" Height="41px" ImageUrl="~/userDefinedImages/shoppingCartBlue.jpg" Width="49px" CssClass="auto-style15" />
+                            <asp:ImageButton ID="img_shoppingCart" runat="server" Height="41px" ImageUrl="~/userDefinedImages/shoppingCartBlue.jpg" Width="49px" CssClass="auto-style15" OnClick="img_shoppingCart_Click" />
                         &nbsp;<br class="auto-style15" />
                             <span class="auto-style15">&nbsp;&nbsp; Cart</span></td>
                     </tr>
