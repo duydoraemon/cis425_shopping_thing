@@ -76,40 +76,22 @@ namespace shopping_thing2 {
         protected global::System.Web.UI.WebControls.Image productImage1;
         
         /// <summary>
-        /// increaseButton control.
+        /// lbl_pName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button increaseButton;
+        protected global::System.Web.UI.WebControls.Label lbl_pName;
         
         /// <summary>
-        /// quantityTextBox control.
+        /// chk_itm1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox quantityTextBox;
-        
-        /// <summary>
-        /// decreaseButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button decreaseButton;
-        
-        /// <summary>
-        /// addToCartButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button addToCartButton;
+        protected global::System.Web.UI.WebControls.CheckBox chk_itm1;
         
         /// <summary>
         /// productImage2 control.
@@ -245,5 +227,14 @@ namespace shopping_thing2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button addToCartButton2;
+        
+        /// <summary>
+        /// addToCartButton3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button addToCartButton3;
     }
 }
