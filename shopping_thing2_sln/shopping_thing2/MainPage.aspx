@@ -46,7 +46,7 @@
                         </td>
                         <td class="auto-style10">
                             <h4>
-                            <asp:TextBox ID="TextBox1" runat="server" Width="871px" Height="33px" CssClass="auto-style15"></asp:TextBox>
+                            <asp:TextBox ID="TextBox1" runat="server" Width="871px" Height="33px" CssClass="auto-style15" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
                                 <span class="auto-style15">Filter By Category:&nbsp; </span>
                             <asp:DropDownList ID="DropDownList1" runat="server" CssClass="auto-style15">
                                 <asp:ListItem>Football</asp:ListItem>
