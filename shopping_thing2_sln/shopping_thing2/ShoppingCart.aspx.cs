@@ -14,5 +14,10 @@ namespace shopping_thing2
         protected void Page_Load(object sender, EventArgs e)
         {
         }
+
+        protected void imgBtn_logo_Click1(object sender, ImageClickEventArgs e)
+        {
+
+        }
     }
 }
