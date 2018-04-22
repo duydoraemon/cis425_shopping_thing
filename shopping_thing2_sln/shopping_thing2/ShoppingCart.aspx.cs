@@ -18,7 +18,7 @@ namespace shopping_thing2
 
         protected void imgBtn_logo_Click1(object sender, ImageClickEventArgs e)
         {
-            
+            Response.Redirect("MainPage.aspx", true);
         }
     }
 }

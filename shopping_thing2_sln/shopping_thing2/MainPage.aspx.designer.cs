@@ -67,51 +67,6 @@ namespace shopping_thing2 {
         protected global::System.Web.UI.WebControls.ImageButton img_shoppingCart;
         
         /// <summary>
-        /// productImage1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image productImage1;
-        
-        /// <summary>
-        /// lbl_pName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_pName;
-        
-        /// <summary>
-        /// lbl_pPrice control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_pPrice;
-        
-        /// <summary>
-        /// lbl_pDesc control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_pDesc;
-        
-        /// <summary>
-        /// chk_itm1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chk_itm1;
-        
-        /// <summary>
         /// addToCartButton4 control.
         /// </summary>
         /// <remarks>
