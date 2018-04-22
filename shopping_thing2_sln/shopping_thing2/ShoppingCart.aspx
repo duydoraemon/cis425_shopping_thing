@@ -72,6 +72,10 @@
                             <br class="auto-style24" />
                             <span class="auto-style24">Filter By Category:&nbsp; </span>
                             <asp:DropDownList ID="DropDownList1" runat="server">
+                                <asp:ListItem>Football</asp:ListItem>
+                                <asp:ListItem>Baseball</asp:ListItem>
+                                <asp:ListItem>Hockey</asp:ListItem>
+                                <asp:ListItem>Lacrosse</asp:ListItem>
                             </asp:DropDownList>
                                 <span class="auto-style24">&nbsp;Sort by: </span> <asp:DropDownList ID="DropDownList2" runat="server">
                                     <asp:ListItem>Relevance</asp:ListItem>

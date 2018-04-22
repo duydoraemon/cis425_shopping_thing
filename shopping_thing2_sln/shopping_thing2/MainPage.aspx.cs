@@ -13,7 +13,6 @@ namespace shopping_thing2
         {
 
         }
-
         /* records array of selected items
          * navigates user to shoppingCart page */
         protected void img_shoppingCart_Click(object sender, ImageClickEventArgs e)
@@ -22,6 +21,14 @@ namespace shopping_thing2
 
             //nagivates to shoppingCart Page
             Response.Redirect("ShoppingCart.aspx", true);
+        }
+        /* records input in textbox
+         * applies filters
+         * has page display items available */
+        protected void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+            string searchIput = TextBox1.Text;
+
         }
     }
 }
