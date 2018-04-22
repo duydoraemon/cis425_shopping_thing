@@ -39,13 +39,6 @@ namespace shopping_thing2
 
             reader.Close();
 
-            cmd.CommandText = "Insert into book (Author, Title, ISBN) " +
-                " values('John Smith', 'Intro to Accounting', '978-1-449-426'); ";
-
-            cmd.ExecuteNonQuery();
-
-            conn.Close();
-
         }
         /* records array of selected items
          * navigates user to shoppingCart page */

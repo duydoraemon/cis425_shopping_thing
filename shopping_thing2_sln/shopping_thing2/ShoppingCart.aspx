@@ -15,29 +15,11 @@
             width: 598px;
             color: #000000;
         }
-        .auto-style27 {
-            width: 598px;
-            height: 48px;
-        }
-        .auto-style28 {
-            width: 598px;
-            height: 26px;
-        }
         .auto-style29 {
             width: 598px;
             text-align: center;
             color: #000000;
             height: 27px;
-        }
-        .auto-style31 {
-            width: 598px;
-            color: #000000;
-            height: 39px;
-        }
-        .auto-style32 {
-            width: 598px;
-            color: #000000;
-            height: 26px;
         }
         .auto-style35 {
             width: 78%;
@@ -93,7 +75,7 @@
                             <span class="auto-style24">&nbsp;&nbsp; Cart</span></td>
                     </tr>
                     <tr>
-                        <td valign="top" class="auto-style4" rowspan="8"="top" >
+                        <td valign="top" class="auto-style4" rowspan="4"="top" >
                             <h3><span class="newStyle2">
                             
                             <span class="auto-style24">Home</span><br class="auto-style24" />
@@ -110,7 +92,7 @@
                         <td class="auto-style26">
                             <h2>Shopping Cart</h2>
                         </td>
-                        <td class="auto-style24" rowspan="8" valign="top">
+                        <td class="auto-style24" rowspan="4" valign="top">
                             <h4>Subtotal:
                                 <asp:Label ID="lbl_sTotal" runat="server" Text="lbl_sTotal"></asp:Label>
 &nbsp;</h4>
@@ -127,46 +109,8 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="auto-style31">
-                            <table class="auto-style35">
-                                <tr>
-                                    <td class="auto-style37" rowspan="3">
-                            <asp:Image ID="productImage1" runat="server" Height="94px" ImageUrl="~/Pictures/productPlaceholder.png" Width="127px" />
-                                    </td>
-                                    <td class="auto-style38">
-                                        <asp:Label ID="lbl_pName" runat="server" Text="lbl_pName"></asp:Label>
-                                    </td>
-                                    <td class="auto-style36">&nbsp;</td>
-                                </tr>
-                                <tr>
-                                    <td class="auto-style39">
-                                        <asp:Label ID="lbl_pPrice" runat="server" Text="lbl_pPrice"></asp:Label>
-                                    </td>
-                                    <td class="auto-style37">&nbsp;</td>
-                                </tr>
-                                <tr>
-                                    <td class="auto-style39">
-                                        <asp:Label ID="lbl_pDesc" runat="server" Text="lbl_pDesc"></asp:Label>
-                                    </td>
-                                    <td class="auto-style37">
-                                        <asp:CheckBox ID="chk_itm1" runat="server" />
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style26">&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style27">
+                        <td class="auto-style26">
                             &nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style32"></td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style28"></td>
                     </tr>
                     <tr>
                         <td class="auto-style29">

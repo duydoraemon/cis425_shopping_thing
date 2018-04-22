@@ -3,8 +3,7 @@
     <style type="text/css">
         .auto-style30 {
             width: 879px;
-            height: 103px;
-        }
+            }
         .auto-style32 {
             text-align: center;
             height: 26px;
@@ -12,27 +11,7 @@
         .auto-style33 {
             height: 103px;
         }
-        .auto-style34 {
-            text-align: right;
-        }
-        .auto-style35 {
-            width: 78%;
-        }
-        .auto-style36 {
-            height: 26px;
-            width: 349px;
-        }
-        .auto-style37 {
-            width: 349px;
-        }
-        .auto-style38 {
-            height: 26px;
-            width: 367px;
-        }
-        .auto-style39 {
-            width: 367px;
-        }
-    </style>
+        </style>
 </asp:Content>
 
 
@@ -70,7 +49,7 @@
                             <span class="auto-style15">&nbsp;&nbsp; Cart</span></td>
                     </tr>
                     <tr>
-                        <td valign="top" class="auto-style4" rowspan="9"="top" >
+                        <td valign="top" class="auto-style4" rowspan="5"="top" >
                             <h3><span class="newStyle2">
                             
                             <span class="auto-style15">Home</span><br class="auto-style15" />
@@ -87,65 +66,22 @@
 
                         </td>
 
-                        <td class="auto-style30">
-                            <table class="auto-style35">
-                                <tr>
-                                    <td class="auto-style37" rowspan="3">
-                            <asp:Image ID="productImage1" runat="server" Height="94px" ImageUrl="~/Pictures/productPlaceholder.png" Width="127px" />
-                                    </td>
-                                    <td class="auto-style38">
-                                        <asp:Label ID="lbl_pName" runat="server" Text="lbl_pName"></asp:Label>
-                                    </td>
-                                    <td class="auto-style36">&nbsp;</td>
-                                </tr>
-                                <tr>
-                                    <td class="auto-style39">
-                                        <asp:Label ID="lbl_pPrice" runat="server" Text="lbl_pPrice"></asp:Label>
-                                    </td>
-                                    <td class="auto-style37">&nbsp;</td>
-                                </tr>
-                                <tr>
-                                    <td class="auto-style39">
-                                        <asp:Label ID="lbl_pDesc" runat="server" Text="lbl_pDesc"></asp:Label>
-                                    </td>
-                                    <td class="auto-style37">
-                                        <asp:CheckBox ID="chk_itm1" runat="server" />
-                                    </td>
-                                </tr>
-                            </table>
+                        <td class="auto-style30" rowspan="4">
+                            <br />
+                            <br />
                         </td>
                         <td class="auto-style33">
                             <asp:Button ID="addToCartButton4" runat="server" Text="Add to cart" />
                             </td>
                     </tr>
                     <tr>
-                        <td class="auto-style11">
-                            &nbsp;</td>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td class="auto-style11">
-                            &nbsp;</td>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td class="auto-style16">
-                            <br />
-                            <br />
-                        </td>
                         <td class="auto-style17"></td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style34">&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style13"></td>
-                    </tr>
-                    <tr>
-                        <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td>&nbsp;</td>
                     </tr>
                     <tr>
                         <td class="auto-style11">
