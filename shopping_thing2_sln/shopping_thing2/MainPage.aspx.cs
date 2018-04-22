@@ -51,13 +51,18 @@ namespace shopping_thing2
             conn.Open();
 
             //create string query using input
+            //apply filter
+           
+
             string query = $"select * from products where productName like ('%{userInput}%') ";
-            
+
+
+
             //creates command and reader object using query string and connection
             var cmd = new MySql.Data.MySqlClient.MySqlCommand(query, conn);
             var reader = cmd.ExecuteReader();
 
-            //loops through database
+            //goes through database and store products in list_product
             while (reader.Read())
             {
                 //records information and converts some variables for constructor
@@ -85,7 +90,7 @@ namespace shopping_thing2
                 newLabel.Text = list_product[i].ProductName;
                 labelCount++;
                 panel_test.Controls.Add(newLabel);
-                
+
             }
 
         }

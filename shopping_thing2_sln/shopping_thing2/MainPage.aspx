@@ -26,17 +26,18 @@
                         <td class="auto-style10">
                             <h4>
                             <asp:TextBox ID="txt_search" runat="server" Width="871px" Height="33px" CssClass="auto-style15"></asp:TextBox>
-                                <span class="auto-style15">Filter By Category:&nbsp; </span>
-                            <asp:DropDownList ID="DropDownList1" runat="server" CssClass="auto-style15">
-                                <asp:ListItem>Football</asp:ListItem>
-                                <asp:ListItem>Baseball</asp:ListItem>
-                                <asp:ListItem>Hockey</asp:ListItem>
-                                <asp:ListItem>Lacrosse</asp:ListItem>
+                                <span class="auto-style15">Filter By Sport:&nbsp; </span>
+                            <asp:DropDownList ID="ddl_sport" runat="server" CssClass="auto-style15">
+                                <asp:ListItem Value="0">No Selection</asp:ListItem>
+                                <asp:ListItem Value="F">Football</asp:ListItem>
+                                <asp:ListItem Value="B">Baseball</asp:ListItem>
+                                <asp:ListItem Value="H">Hockey</asp:ListItem>
+                                <asp:ListItem Value="L">Lacrosse</asp:ListItem>
                             </asp:DropDownList>
-                            <span class="auto-style15">&nbsp;Sort by: </span> <asp:DropDownList ID="DropDownList2" runat="server" CssClass="auto-style15">
-                                <asp:ListItem>Relevance</asp:ListItem>
-                                <asp:ListItem>Price: Low to High</asp:ListItem>
-                                <asp:ListItem>Price: High to Low</asp:ListItem>
+                            <span class="auto-style15">&nbsp;Sort by Price: </span> <asp:DropDownList ID="ddl_price" runat="server" CssClass="auto-style15">
+                                <asp:ListItem Value="0">No Selection</asp:ListItem>
+                                <asp:ListItem Value="L2H">Low to High</asp:ListItem>
+                                <asp:ListItem Value="H2L">High to Low</asp:ListItem>
                             </asp:DropDownList>
                             <asp:ImageButton ID="imgBtn_search" runat="server" ImageUrl="~/Pictures/searchImage.png" Width="30px" OnClick="imgBtn_search_Click" />
                             </h4>
@@ -67,7 +68,8 @@
                         </td>
 
                         <td valign="top" class="auto-style30" rowspan="4">
-                            <asp:Panel ID="panel_test" runat="server" Height="235px" Width="842px">
+                            <br />
+                            <asp:Panel ID="panel_test" runat="server">
                             </asp:Panel>
                         </td>
                         <td class="auto-style33">
