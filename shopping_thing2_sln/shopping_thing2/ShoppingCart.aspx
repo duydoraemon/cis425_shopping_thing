@@ -3,6 +3,8 @@
     <style type="text/css">
         .auto-style4 {
             text-align: center;
+            width: 153px;
+            color: #000000;
         }
         .auto-style25 {
             width: 598px;
@@ -25,6 +27,7 @@
             width: 598px;
             text-align: center;
             color: #000000;
+            height: 27px;
         }
         .auto-style30 {
             margin-right: 0px;
@@ -35,10 +38,11 @@
             height: 39px;
         }
         .auto-style32 {
+            width: 598px;
             color: #000000;
-            height: 39px;
+            height: 26px;
         }
-    </style>
+        </style>
 </asp:Content>
 
 
@@ -46,12 +50,13 @@
                 <table class="auto-style1">
                     <tr>
                         <td class="auto-style2">
-                            <asp:Image ID="Image1" runat="server" Height="86px" ImageUrl="~/userDefinedImages/companyLogo.png" Width="119px" CssClass="auto-style24" />
+                            <asp:ImageButton ID="imgBtn_logo" runat="server" Height="77px" ImageUrl="~/userDefinedImages/companyLogo.png" OnClick="imgBtn_logo_Click1" Width="111px" />
                         </td>
                         <td class="auto-style25">
+                            <h4 >
                             <asp:TextBox ID="TextBox1" runat="server" Width="871px" Height="33px"></asp:TextBox>
                             <br class="auto-style24" />
-                            <h4 style="width: 877px"><span class="auto-style24">Filter By Category:&nbsp; </span>
+                            <span class="auto-style24">Filter By Category:&nbsp; </span>
                             <asp:DropDownList ID="DropDownList1" runat="server">
                             </asp:DropDownList>
                                 <span class="auto-style24">&nbsp;Sort by: </span> <asp:DropDownList ID="DropDownList2" runat="server">
@@ -65,12 +70,12 @@
                         <td class="auto-style9">
                             <span class="auto-style24">&nbsp;&nbsp;&nbsp;
                             </span>
-                            <asp:ImageButton ID="img_shoppingCart" runat="server" Height="41px" ImageUrl="~/userDefinedImages/shoppingCartBlue.jpg" Width="49px" CssClass="auto-style24" OnClick="img_shoppingCart_Click" />
+                            <asp:ImageButton ID="img_shoppingCart" runat="server" Height="41px" ImageUrl="~/userDefinedImages/shoppingCartBlue.jpg" Width="49px" CssClass="auto-style24" />
                         &nbsp;<br class="auto-style24" />
                             <span class="auto-style24">&nbsp;&nbsp; Cart</span></td>
                     </tr>
                     <tr>
-                        <td valign="top" class="auto-style4" rowspan="13"="top" >
+                        <td valign="top" class="auto-style4" rowspan="8"="top" >
                             <h3><span class="newStyle2">
                             
                             <span class="auto-style24">Home</span><br class="auto-style24" />
@@ -87,7 +92,7 @@
                         <td class="auto-style26">
                             <h2>Shopping Cart</h2>
                         </td>
-                        <td class="auto-style24" rowspan="13" valign="top">
+                        <td class="auto-style24" rowspan="8" valign="top">
                             <h4>Subtotal </h4>
                             <h4>Price</h4>
                             <h4>Checkout</h4>
@@ -117,25 +122,10 @@
                             </td>
                     </tr>
                     <tr>
-                        <td class="auto-style26">&nbsp;</td>
+                        <td class="auto-style32"></td>
                     </tr>
                     <tr>
                         <td class="auto-style28"></td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style26">&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style26">&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style26">&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style26">&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style26">&nbsp;</td>
                     </tr>
                     <tr>
                         <td class="auto-style29">
