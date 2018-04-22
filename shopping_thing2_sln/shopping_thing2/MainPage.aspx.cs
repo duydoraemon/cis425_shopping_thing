@@ -33,8 +33,7 @@ namespace shopping_thing2
                 var productPrice = reader["productPrice"];
 
                 // Do something with the retrieved values
-                lbl_pName.Text += productName.ToString();
-                lbl_pPrice.Text = productPrice.ToString(); 
+                
             }
 
             reader.Close();
@@ -53,10 +52,7 @@ namespace shopping_thing2
         /* records input in textbox
 * applies filters
 * has page display items available */
-        protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
-        {
-
-        }
+        
 
 
     }
