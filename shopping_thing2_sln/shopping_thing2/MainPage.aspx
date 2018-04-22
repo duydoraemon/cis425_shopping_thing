@@ -46,7 +46,7 @@
                         </td>
                         <td class="auto-style10">
                             <h4>
-                            <asp:TextBox ID="TextBox1" runat="server" Width="871px" Height="33px" CssClass="auto-style15" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
+                            <asp:TextBox ID="TextBox1" runat="server" Width="871px" Height="33px" CssClass="auto-style15"></asp:TextBox>
                                 <span class="auto-style15">Filter By Category:&nbsp; </span>
                             <asp:DropDownList ID="DropDownList1" runat="server" CssClass="auto-style15">
                                 <asp:ListItem>Football</asp:ListItem>
@@ -59,7 +59,7 @@
                                 <asp:ListItem>Price: Low to High</asp:ListItem>
                                 <asp:ListItem>Price: High to Low</asp:ListItem>
                             </asp:DropDownList>
-                            <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/Pictures/searchImage.png" Width="30px" />
+                            <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/Pictures/searchImage.png" Width="30px" OnClick="ImageButton2_Click" />
                             </h4>
                         </td>
                         <td class="auto-style9">
