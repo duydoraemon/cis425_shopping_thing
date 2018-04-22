@@ -13,5 +13,15 @@ namespace shopping_thing2
         {
 
         }
+
+        /* records array of selected items
+         * navigates user to shoppingCart page */
+        protected void img_shoppingCart_Click(object sender, ImageClickEventArgs e)
+        {
+            //records itemsArray
+
+            //nagivates to shoppingCart Page
+            Response.Redirect("ShoppingCart.aspx", true);
+        }
     }
 }

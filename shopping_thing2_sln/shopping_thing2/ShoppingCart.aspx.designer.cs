@@ -13,13 +13,13 @@ namespace shopping_thing2 {
     public partial class ShoppingCart {
         
         /// <summary>
-        /// Image1 control.
+        /// imgBtn_logo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
+        protected global::System.Web.UI.WebControls.ImageButton imgBtn_logo;
         
         /// <summary>
         /// TextBox1 control.
@@ -58,49 +58,49 @@ namespace shopping_thing2 {
         protected global::System.Web.UI.WebControls.ImageButton ImageButton2;
         
         /// <summary>
-        /// ImageButton1 control.
+        /// img_shoppingCart control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ImageButton1;
+        protected global::System.Web.UI.WebControls.ImageButton img_shoppingCart;
         
         /// <summary>
-        /// Image2 control.
+        /// lbl_sTotal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image2;
+        protected global::System.Web.UI.WebControls.Label lbl_sTotal;
         
         /// <summary>
-        /// TextBox2 control.
+        /// lbl_tax control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.Label lbl_tax;
         
         /// <summary>
-        /// TextBox3 control.
+        /// lbl_total control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox3;
+        protected global::System.Web.UI.WebControls.Label lbl_total;
         
         /// <summary>
-        /// DropDownList3 control.
+        /// addToCartButton3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList3;
+        protected global::System.Web.UI.WebControls.Button addToCartButton3;
         
         /// <summary>
         /// Button1 control.
@@ -110,5 +110,50 @@ namespace shopping_thing2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button1;
+        
+        /// <summary>
+        /// productImage1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image productImage1;
+        
+        /// <summary>
+        /// lbl_pName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_pName;
+        
+        /// <summary>
+        /// lbl_pPrice control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_pPrice;
+        
+        /// <summary>
+        /// lbl_pDesc control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_pDesc;
+        
+        /// <summary>
+        /// chk_itm1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox chk_itm1;
     }
 }
