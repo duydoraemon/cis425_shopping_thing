@@ -22,13 +22,13 @@ namespace shopping_thing2 {
         protected global::System.Web.UI.WebControls.ImageButton imgBtn_logo;
         
         /// <summary>
-        /// TextBox1 control.
+        /// txt_search control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox txt_search;
         
         /// <summary>
         /// DropDownList1 control.
@@ -49,13 +49,13 @@ namespace shopping_thing2 {
         protected global::System.Web.UI.WebControls.DropDownList DropDownList2;
         
         /// <summary>
-        /// ImageButton2 control.
+        /// imgBtn_search control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ImageButton2;
+        protected global::System.Web.UI.WebControls.ImageButton imgBtn_search;
         
         /// <summary>
         /// img_shoppingCart control.
@@ -65,6 +65,15 @@ namespace shopping_thing2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ImageButton img_shoppingCart;
+        
+        /// <summary>
+        /// panel_test control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel panel_test;
         
         /// <summary>
         /// addToCartButton4 control.

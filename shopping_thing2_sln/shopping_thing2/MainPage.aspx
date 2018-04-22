@@ -25,7 +25,7 @@
                         </td>
                         <td class="auto-style10">
                             <h4>
-                            <asp:TextBox ID="TextBox1" runat="server" Width="871px" Height="33px" CssClass="auto-style15"></asp:TextBox>
+                            <asp:TextBox ID="txt_search" runat="server" Width="871px" Height="33px" CssClass="auto-style15"></asp:TextBox>
                                 <span class="auto-style15">Filter By Category:&nbsp; </span>
                             <asp:DropDownList ID="DropDownList1" runat="server" CssClass="auto-style15">
                                 <asp:ListItem>Football</asp:ListItem>
@@ -38,7 +38,7 @@
                                 <asp:ListItem>Price: Low to High</asp:ListItem>
                                 <asp:ListItem>Price: High to Low</asp:ListItem>
                             </asp:DropDownList>
-                            <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/Pictures/searchImage.png" Width="30px" />
+                            <asp:ImageButton ID="imgBtn_search" runat="server" ImageUrl="~/Pictures/searchImage.png" Width="30px" OnClick="imgBtn_search_Click" />
                             </h4>
                         </td>
                         <td class="auto-style9">
@@ -66,9 +66,9 @@
 
                         </td>
 
-                        <td class="auto-style30" rowspan="4">
-                            <br />
-                            <br />
+                        <td valign="top" class="auto-style30" rowspan="4">
+                            <asp:Panel ID="panel_test" runat="server" Height="235px" Width="842px">
+                            </asp:Panel>
                         </td>
                         <td class="auto-style33">
                             <asp:Button ID="addToCartButton4" runat="server" Text="Add to cart" />
@@ -81,7 +81,7 @@
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td class="auto-style17"></td>
+                        <td class="auto-style17">&nbsp;</td>
                     </tr>
                     <tr>
                         <td class="auto-style11">

@@ -21,22 +21,10 @@
             color: #000000;
             height: 27px;
         }
-        .auto-style35 {
-            width: 78%;
-        }
-        .auto-style37 {
-            width: 349px;
-        }
-        .auto-style38 {
-            height: 26px;
-            width: 367px;
-        }
-        .auto-style36 {
-            height: 26px;
-            width: 349px;
-        }
-        .auto-style39 {
-            width: 367px;
+        .auto-style40 {
+            width: 598px;
+            color: #000000;
+            height: 45px;
         }
         </style>
 </asp:Content>
@@ -109,8 +97,8 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="auto-style26">
-                            &nbsp;</td>
+                        <td class="auto-style40">
+                            </td>
                     </tr>
                     <tr>
                         <td class="auto-style29">
