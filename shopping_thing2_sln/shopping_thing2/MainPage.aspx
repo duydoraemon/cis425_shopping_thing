@@ -49,7 +49,7 @@
                             <span class="auto-style15">&nbsp;&nbsp; Cart</span></td>
                     </tr>
                     <tr>
-                        <td valign="top" class="auto-style4" rowspan="5"="top" >
+                        <td valign"top" class="auto-style4" rowspan="5"="top" >
                             <h3><span class="newStyle2">
                             
                             <span class="auto-style15">Home</span><br class="auto-style15" />
