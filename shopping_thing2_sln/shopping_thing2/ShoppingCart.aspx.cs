@@ -11,10 +11,10 @@ namespace shopping_thing2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            TextBox2.BorderWidth = 0;
-            TextBox2.Text = "Product Name";
-            TextBox3.BorderWidth = 0;
-            TextBox3.Text = "Product Price";
+            //TextBox2.BorderWidth = 0;
+            //TextBox2.Text = "Product Name";
+            //TextBox3.BorderWidth = 0;
+            //TextBox3.Text = "Product Price";
         }
 
         //navigates to home page

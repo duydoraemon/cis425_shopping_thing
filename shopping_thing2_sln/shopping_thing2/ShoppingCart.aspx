@@ -29,9 +29,6 @@
             color: #000000;
             height: 27px;
         }
-        .auto-style30 {
-            margin-right: 0px;
-        }
         .auto-style31 {
             width: 598px;
             color: #000000;
@@ -41,6 +38,23 @@
             width: 598px;
             color: #000000;
             height: 26px;
+        }
+        .auto-style35 {
+            width: 78%;
+        }
+        .auto-style37 {
+            width: 349px;
+        }
+        .auto-style38 {
+            height: 26px;
+            width: 367px;
+        }
+        .auto-style36 {
+            height: 26px;
+            width: 349px;
+        }
+        .auto-style39 {
+            width: 367px;
         }
         </style>
 </asp:Content>
@@ -93,22 +107,48 @@
                             <h2>Shopping Cart</h2>
                         </td>
                         <td class="auto-style24" rowspan="8" valign="top">
-                            <h4>Subtotal </h4>
-                            <h4>Price</h4>
-                            <h4>Checkout</h4>
+                            <h4>Subtotal:
+                                <asp:Label ID="lbl_sTotal" runat="server" Text="lbl_sTotal"></asp:Label>
+&nbsp;</h4>
+                            <h4>Tax:
+                                <asp:Label ID="lbl_tax" runat="server" Text="lbl_tax"></asp:Label>
+                            </h4>
+                            <h4>Total:
+                                <asp:Label ID="lbl_total" runat="server" Text="lbl_total"></asp:Label>
+                            </h4>
+                            <p>
+                            <asp:Button ID="addToCartButton3" runat="server" Text="Checkout" Width="187px" />
+                            </p>
                             <asp:Button ID="Button1" runat="server" Text="Cancel Purchase" />
                         </td>
                     </tr>
                     <tr>
                         <td class="auto-style31">
-                            <h2>
-                            <asp:Image ID="Image2" runat="server" Height="69px" ImageUrl="~/Pictures/productPlaceholder.png" Width="100px" />
-                            <asp:TextBox ID="TextBox2" runat="server" CssClass="auto-style30" Height="61px" Width="180px"></asp:TextBox>
-                            <asp:TextBox ID="TextBox3" runat="server" BackColor="White" BorderColor="White" Height="60px" Width="199px"></asp:TextBox>
-                            <asp:DropDownList ID="DropDownList3" runat="server">
-                                <asp:ListItem>1</asp:ListItem>
-                            </asp:DropDownList>
-                            </h2>
+                            <table class="auto-style35">
+                                <tr>
+                                    <td class="auto-style37" rowspan="3">
+                            <asp:Image ID="productImage1" runat="server" Height="94px" ImageUrl="~/Pictures/productPlaceholder.png" Width="127px" />
+                                    </td>
+                                    <td class="auto-style38">
+                                        <asp:Label ID="lbl_pName" runat="server" Text="lbl_pName"></asp:Label>
+                                    </td>
+                                    <td class="auto-style36">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style39">
+                                        <asp:Label ID="lbl_pPrice" runat="server" Text="lbl_pPrice"></asp:Label>
+                                    </td>
+                                    <td class="auto-style37">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style39">
+                                        <asp:Label ID="lbl_pDesc" runat="server" Text="lbl_pDesc"></asp:Label>
+                                    </td>
+                                    <td class="auto-style37">
+                                        <asp:CheckBox ID="chk_itm1" runat="server" />
+                                    </td>
+                                </tr>
+                            </table>
                         </td>
                     </tr>
                     <tr>
@@ -116,10 +156,7 @@
                     </tr>
                     <tr>
                         <td class="auto-style27">
-&nbsp;&nbsp;&nbsp;&nbsp;
-                            &nbsp;&nbsp;&nbsp;
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            </td>
+                            &nbsp;</td>
                     </tr>
                     <tr>
                         <td class="auto-style32"></td>
