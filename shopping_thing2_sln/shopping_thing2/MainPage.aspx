@@ -12,7 +12,9 @@
             height: 103px;
         }
         .auto-style34 {
-            width: 274px;
+            <!--width: 274px;-->
+
+
         }
         </style>
 </asp:Content>
@@ -76,10 +78,11 @@
                                     <td class="auto-style34">
                                         <asp:Panel ID="panel_test" runat="server" Height="169px" Width="230px">
                                         </asp:Panel>
-                                    </td>
-                                    <td>
-                                        <asp:Panel ID="panel_label" runat="server" Height="153px">
+                                    
+                                    
+                                        <asp:Panel ID="panel_label" runat="server" Height="169px" Width="495px">
                                         </asp:Panel>
+                                   
                                     </td>
                                 </tr>
                             </table>
