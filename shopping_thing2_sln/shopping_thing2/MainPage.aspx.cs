@@ -48,7 +48,7 @@ namespace shopping_thing2
                 newButton.ID = "newButton" + buttonCount;
                 newLabel.ID = "newLabel" + labelCount;
                 newLabel.Text = $"Product Name:  {list_product[i].ProductName} <br> Product Price:  ${list_product[i].ProductPrice}   <br><br><br><br><br><br><br> ";
-
+                
                 switch (list_product[i].RecNumber)
                 {
                     case 1: newButton.ImageUrl = "~/userDefinedImages/baseballBat.jpg";
