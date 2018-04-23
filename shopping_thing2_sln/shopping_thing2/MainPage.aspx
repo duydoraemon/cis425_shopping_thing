@@ -11,6 +11,9 @@
         .auto-style33 {
             height: 103px;
         }
+        .auto-style34 {
+            width: 274px;
+        }
         </style>
 </asp:Content>
 
@@ -68,8 +71,19 @@
                         </td>
 
                         <td valign="top" class="auto-style30" rowspan="4">
-                            <asp:Panel ID="panel_test" runat="server" Height="206px">
-                            </asp:Panel>
+                            <br />
+                            <table class="auto-style1">
+                                <tr>
+                                    <td class="auto-style34">
+                                        <asp:Panel ID="panel_test" runat="server" Height="169px" Width="230px">
+                                        </asp:Panel>
+                                    </td>
+                                    <td>
+                                        <asp:Panel ID="panel_label" runat="server" Height="153px">
+                                        </asp:Panel>
+                                    </td>
+                                </tr>
+                            </table>
                         </td>
                         <td class="auto-style33">
                             <asp:Button ID="addToCartButton4" runat="server" Text="Add to cart" />
