@@ -92,7 +92,7 @@
                                 <asp:Label ID="lbl_total" runat="server" Text="lbl_total"></asp:Label>
                             </h4>
                             <p>
-                            <asp:Button ID="addToCartButton3" runat="server" Text="Checkout" Width="150px" Height="40px" />
+                            <asp:Button ID="addToCartButton3" runat="server" Text="Checkout" Width="150px" Height="40px" OnClick="addToCartButton3_Click" />
                             </p>
                             <asp:Button ID="Button1" runat="server" Text="Remove From Cart" Height="40px" Width="150px" />
                         </td>

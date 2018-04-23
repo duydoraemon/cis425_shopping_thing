@@ -71,7 +71,6 @@
                         </td>
 
                         <td valign="top" class="auto-style30" rowspan="4">
-                            <br />
                             <table class="auto-style1">
                                 <tr>
                                     <td class="auto-style34">
