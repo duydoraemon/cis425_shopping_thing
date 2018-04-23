@@ -21,22 +21,10 @@
             color: #000000;
             height: 27px;
         }
-        .auto-style35 {
-            width: 78%;
-        }
-        .auto-style37 {
-            width: 349px;
-        }
-        .auto-style38 {
-            height: 26px;
-            width: 367px;
-        }
-        .auto-style36 {
-            height: 26px;
-            width: 349px;
-        }
-        .auto-style39 {
-            width: 367px;
+        .auto-style40 {
+            width: 598px;
+            color: #000000;
+            height: 45px;
         }
         </style>
 </asp:Content>
@@ -52,17 +40,18 @@
                             <h4 >
                             <asp:TextBox ID="TextBox1" runat="server" Width="871px" Height="33px"></asp:TextBox>
                             <br class="auto-style24" />
-                            <span class="auto-style24">Filter By Category:&nbsp; </span>
-                            <asp:DropDownList ID="DropDownList1" runat="server">
-                                <asp:ListItem>Football</asp:ListItem>
-                                <asp:ListItem>Baseball</asp:ListItem>
-                                <asp:ListItem>Hockey</asp:ListItem>
-                                <asp:ListItem>Lacrosse</asp:ListItem>
+                            <span class="auto-style24">Filter By Sport:&nbsp; </span>
+                            <asp:DropDownList ID="ddl_sport" runat="server">
+                                <asp:ListItem Value="0">No Selection</asp:ListItem>
+                                <asp:ListItem Value="F">Football</asp:ListItem>
+<asp:ListItem Value="B">Baseball</asp:ListItem>
+                                <asp:ListItem Value="H"></asp:ListItem>
+                                <asp:ListItem Value="L">HockeyLacrosse</asp:ListItem>
                             </asp:DropDownList>
-                                <span class="auto-style24">&nbsp;Sort by: </span> <asp:DropDownList ID="DropDownList2" runat="server">
-                                    <asp:ListItem>Relevance</asp:ListItem>
-                                    <asp:ListItem>Price: Low to High</asp:ListItem>
-                                    <asp:ListItem>Price: High to Low</asp:ListItem>
+                                <span class="auto-style24">&nbsp;Sort by Price: </span> <asp:DropDownList ID="ddl_price" runat="server">
+                                    <asp:ListItem Value="0">No Selection</asp:ListItem>
+                                    <asp:ListItem Value="L2H">Low to High</asp:ListItem>
+                                    <asp:ListItem Value="H2L">High to Low</asp:ListItem>
                             </asp:DropDownList>
                             <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/Pictures/searchImage.png" Width="30px" />
                             </h4>
@@ -103,14 +92,14 @@
                                 <asp:Label ID="lbl_total" runat="server" Text="lbl_total"></asp:Label>
                             </h4>
                             <p>
-                            <asp:Button ID="addToCartButton3" runat="server" Text="Checkout" Width="187px" />
+                            <asp:Button ID="addToCartButton3" runat="server" Text="Checkout" Width="150px" Height="40px" OnClick="addToCartButton3_Click" />
                             </p>
-                            <asp:Button ID="Button1" runat="server" Text="Cancel Purchase" />
+                            <asp:Button ID="Button1" runat="server" Text="Remove From Cart" Height="40px" Width="150px" />
                         </td>
                     </tr>
                     <tr>
-                        <td class="auto-style26">
-                            &nbsp;</td>
+                        <td class="auto-style40">
+                            </td>
                     </tr>
                     <tr>
                         <td class="auto-style29">

@@ -181,7 +181,27 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="ShoppingCart.aspx" />
     <Content Include="Site.Master" />
+    <Content Include="userDefinedImages\baseball.jpg" />
+    <Content Include="userDefinedImages\baseballBat.jpg" />
+    <Content Include="userDefinedImages\baseballCleats.jpg" />
+    <Content Include="userDefinedImages\baseballGlove.jpg" />
+    <Content Include="userDefinedImages\baseballHelmet.jpg" />
     <Content Include="userDefinedImages\companyLogo.png" />
+    <Content Include="userDefinedImages\football gloves.jpg" />
+    <Content Include="userDefinedImages\footballCleats.jpg" />
+    <Content Include="userDefinedImages\footballHelment.jpg" />
+    <Content Include="userDefinedImages\footballPads.jpg" />
+    <Content Include="userDefinedImages\footballs.jpg" />
+    <Content Include="userDefinedImages\hockeyGloves.jpg" />
+    <Content Include="userDefinedImages\HockeyHelmet.jpg" />
+    <Content Include="userDefinedImages\hockeyPuck.jpg" />
+    <Content Include="userDefinedImages\hockeyStick.jpg" />
+    <Content Include="userDefinedImages\hockyPads.jpg" />
+    <Content Include="userDefinedImages\lacrosseCleats.jpg" />
+    <Content Include="userDefinedImages\lacrosseGloves.jpg" />
+    <Content Include="userDefinedImages\lacrosseHelmet.jpg" />
+    <Content Include="userDefinedImages\lacrossePads.jpg" />
+    <Content Include="userDefinedImages\lacrosseStick.jpg" />
     <Content Include="userDefinedImages\shoppingCartBlue.jpg" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -236,6 +256,7 @@
     <Compile Include="MainPage.aspx.designer.cs">
       <DependentUpon>MainPage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ShoppingCart.aspx.cs">
       <DependentUpon>ShoppingCart.aspx</DependentUpon>

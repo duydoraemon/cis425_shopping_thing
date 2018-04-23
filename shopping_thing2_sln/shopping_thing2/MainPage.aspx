@@ -11,6 +11,11 @@
         .auto-style33 {
             height: 103px;
         }
+        .auto-style34 {
+            <!--width: 274px;-->
+
+
+        }
         </style>
 </asp:Content>
 
@@ -25,20 +30,21 @@
                         </td>
                         <td class="auto-style10">
                             <h4>
-                            <asp:TextBox ID="TextBox1" runat="server" Width="871px" Height="33px" CssClass="auto-style15"></asp:TextBox>
-                                <span class="auto-style15">Filter By Category:&nbsp; </span>
-                            <asp:DropDownList ID="DropDownList1" runat="server" CssClass="auto-style15">
-                                <asp:ListItem>Football</asp:ListItem>
-                                <asp:ListItem>Baseball</asp:ListItem>
-                                <asp:ListItem>Hockey</asp:ListItem>
-                                <asp:ListItem>Lacrosse</asp:ListItem>
+                            <asp:TextBox ID="txt_search" runat="server" Width="871px" Height="33px" CssClass="auto-style15"></asp:TextBox>
+                                <span class="auto-style15">Filter By Sport:&nbsp; </span>
+                            <asp:DropDownList ID="ddl_sport" runat="server" CssClass="auto-style15">
+                                <asp:ListItem Value="0">No Selection</asp:ListItem>
+                                <asp:ListItem Value="F">Football</asp:ListItem>
+                                <asp:ListItem Value="B">Baseball</asp:ListItem>
+                                <asp:ListItem Value="H">Hockey</asp:ListItem>
+                                <asp:ListItem Value="L">Lacrosse</asp:ListItem>
                             </asp:DropDownList>
-                            <span class="auto-style15">&nbsp;Sort by: </span> <asp:DropDownList ID="DropDownList2" runat="server" CssClass="auto-style15">
-                                <asp:ListItem>Relevance</asp:ListItem>
-                                <asp:ListItem>Price: Low to High</asp:ListItem>
-                                <asp:ListItem>Price: High to Low</asp:ListItem>
+                            <span class="auto-style15">&nbsp;Sort by Price: </span> <asp:DropDownList ID="ddl_price" runat="server" CssClass="auto-style15">
+                                <asp:ListItem Value="0">No Selection</asp:ListItem>
+                                <asp:ListItem Value="L2H">Low to High</asp:ListItem>
+                                <asp:ListItem Value="H2L">High to Low</asp:ListItem>
                             </asp:DropDownList>
-                            <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/Pictures/searchImage.png" Width="30px" />
+                            <asp:ImageButton ID="imgBtn_search" runat="server" ImageUrl="~/Pictures/searchImage.png" Width="30px" OnClick="imgBtn_search_Click" />
                             </h4>
                         </td>
                         <td class="auto-style9">
@@ -66,9 +72,20 @@
 
                         </td>
 
-                        <td class="auto-style30" rowspan="4">
-                            <br />
-                            <br />
+                        <td valign="top" class="auto-style30" rowspan="4">
+                            <table class="auto-style1">
+                                <tr>
+                                    <td class="auto-style34">
+                                        <asp:Panel ID="panel_test" runat="server" Height="169px" Width="230px">
+                                        </asp:Panel>
+                                    
+                                    
+                                        <asp:Panel ID="panel_label" runat="server" Height="169px" Width="495px">
+                                        </asp:Panel>
+                                   
+                                    </td>
+                                </tr>
+                            </table>
                         </td>
                         <td class="auto-style33">
                             <asp:Button ID="addToCartButton4" runat="server" Text="Add to cart" />
@@ -81,7 +98,7 @@
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td class="auto-style17"></td>
+                        <td class="auto-style17">&nbsp;</td>
                     </tr>
                     <tr>
                         <td class="auto-style11">
