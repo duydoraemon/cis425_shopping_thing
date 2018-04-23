@@ -13,18 +13,18 @@ namespace shopping_thing2
         List<Product> list_product = new List<Product>();
         List<Product> list_productSelected = new List<Product>();
         List<Product> productCartList = new List<Product>();
+        List<CheckBox> checkboxCartList = new List<CheckBox>();
 
         //doesn't have dick in it
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
-        /* records array of selected items
+        /* records List of selected items
          * navigates user to shoppingCart page */
         protected void img_shoppingCart_Click(object sender, ImageClickEventArgs e)
         {
-            //records itemsArray
 
             //nagivates to shoppingCart Page
             Response.Redirect("ShoppingCart.aspx", true);
@@ -45,7 +45,11 @@ namespace shopping_thing2
 
                 ImageButton newButton = new ImageButton();
                 Label newLabel = new Label();
+                CheckBox newCheckBox = new CheckBox();
 
+                checkboxCartList.Add(newCheckBox);
+
+                newCheckBox.Text = "Add to Cart<br><br><br>";
                 newButton.ID = "newButton" + buttonCount;
                 newLabel.ID = "newLabel" + labelCount;
                 newLabel.Text = $"Name:  {list_product[i].ProductName} <br> Price:  ${list_product[i].ProductPrice} <br> Description:  {list_product[i].ProductDescription};//<br><br><br><br><br><br> ";
@@ -100,21 +104,11 @@ namespace shopping_thing2
                 buttonCount++;
                 labelCount++;
 
-
+                panel_checkBox.Controls.Add(newCheckBox);
                 panel_test.Controls.Add(newButton);
                 panel_label.Controls.Add(newLabel);
             }
-            //creates new checkboxes to add to cart
-            for (int i = 0; i < list_product.Count; i++)
-            {
-                CheckBox newCheckBox = new CheckBox();
-                newCheckBox.Text = "Add to Cart<br><br><br>";
-                if (newCheckBox.Checked)
-                {
-                    productCartList.Add(list_product[i]);
-                }
-                panel_checkBox.Controls.Add(newCheckBox);
-            }
+
         }
 
         /* connect to database
@@ -191,8 +185,20 @@ namespace shopping_thing2
         //add to cart button click event
         protected void addToCartButton4_Click(object sender, EventArgs e)
         {
+            
             Session[productCartList.ToString()] = productCartList;
             Response.Redirect("ShoppingCart.aspx");
+        }
+
+        public void AddToCart(List<CheckBox> checkboxCartList)
+        {
+            for (int i = 0; i < checkboxCartList.Count; i++)
+            {
+                if (checkboxCartList[i].Checked)
+                {
+                    productCartList.Add(list_product[i]);
+                }
+            }
         }
     }
 }

@@ -19,6 +19,8 @@ namespace shopping_thing2
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            RetriveInfoFromDatabase();
+
             productCartList = (List<Product>)Session[productCartList.ToString()];
 
             for (int i = 0; i < productCartList.Count; i++)
@@ -32,9 +34,9 @@ namespace shopping_thing2
 
                 newButton.ID = "newButton" + buttonCount;
                 newLabel.ID = "newLabel" + labelCount;
-                newLabel.Text = $"Name:  {list_product[i].ProductName} <br> Price:  ${list_product[i].ProductPrice} <br> Description:  {list_product[i].ProductDescription};//<br><br><br><br><br><br> ";
+                newLabel.Text = $"Name:  {productCartList[i].ProductName} <br> Price:  ${productCartList[i].ProductPrice} <br> Description:  {productCartList[i].ProductDescription};//<br><br><br><br><br><br> ";
 
-                switch (list_product[i].RecNumber)
+                switch (productCartList[i].RecNumber)
                 {
                     case 1:
                         newButton.ImageUrl = "~/userDefinedImages/baseballBat.jpg";
@@ -109,7 +111,7 @@ namespace shopping_thing2
                 panel_label.Controls.Add(newLabel);
 
             }
-            for (int i = 0; i < list_product.Count; i++)
+            for (int i = 0; i < productCartList.Count; i++)
             {
                 CheckBox newCheckBox = new CheckBox();
                 newCheckBox.Text = "Remove from Cart";
@@ -134,110 +136,13 @@ namespace shopping_thing2
 
         protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
         {
-            //retrieves info
-            RetriveInfoFromDatabase();
+            //redirect to main page
+            //save txt_search.Text in Session   
+            Session["searchText"] = txt_search;
+            Session["sportFilter"] = ddl_sport;
+            Session["priceFilter"] = ddl_price;
 
-            //displays the items... this Part is a total bitch. I can't get it to display on seperate lines
-            for (int i = 0; i < productCartList.Count; i++)
-            {
-                int buttonCount = 1;
-                int labelCount = 1;
-
-                ImageButton newButton = new ImageButton();
-                Label newLabel = new Label();
-                
-
-                newButton.ID = "newButton" + buttonCount;
-                newLabel.ID = "newLabel" + labelCount;
-                newLabel.Text = $"Name:  {list_product[i].ProductName} <br> Price:  ${list_product[i].ProductPrice} <br> Description:  {list_product[i].ProductDescription};//<br><br><br><br><br><br> ";
-                
-                switch (list_product[i].RecNumber)
-                {
-                    case 1:
-                        newButton.ImageUrl = "~/userDefinedImages/baseballBat.jpg";
-                        break;
-                    case 2:
-                        newButton.ImageUrl = "~/userDefinedImages/baseballHelmet.jpg";
-                        break;
-                    case 3:
-                        newButton.ImageUrl = "~/userDefinedImages/baseballCleats.jpg";
-                        break;
-                    case 4:
-                        newButton.ImageUrl = "~/userDefinedImages/baseBallGlove.jpg";
-                        break;
-                    case 5:
-                        newButton.ImageUrl = "~/userDefinedImages/baseball.jpg";
-                        break;
-                    case 6:
-                        newButton.ImageUrl = "~/userDefinedImages/footballPads.jpg";
-                        break;
-                    case 7:
-                        newButton.ImageUrl = "~/userDefinedImages/footballs.jpg";
-                        break;
-                    case 8:
-                        newButton.ImageUrl = "~/userDefinedImages/footballHelment.jpg";
-                        break;
-                    case 9:
-                        newButton.ImageUrl = "~/userDefinedImages/footballCleats.jpg";
-                        break;
-                    case 10:
-                        newButton.ImageUrl = "~/userDefinedImages/football Gloves.jpg";
-                        break;
-                    case 11:
-                        newButton.ImageUrl = "~/userDefinedImages/hockeyStick.jpg";
-                        break;
-                    case 12:
-                        newButton.ImageUrl = "~/userDefinedImages/HockeyHelmet.jpg";
-                        break;
-                    case 13:
-                        newButton.ImageUrl = "~/userDefinedImages/hockeyGloves.jpg";
-                        break;
-                    case 14:
-                        newButton.ImageUrl = "~/userDefinedImages/hockeyPuck.jpg";
-                        break;
-                    case 15:
-                        newButton.ImageUrl = "~/userDefinedImages/hockyPads.jpg";
-                        break;
-                    case 16:
-                        newButton.ImageUrl = "~/userDefinedImages/lacrossePads.jpg";
-                        break;
-                    case 17:
-                        newButton.ImageUrl = "~/userDefinedImages/lacrossegloves.jpg";
-                        break;
-                    case 18:
-                        newButton.ImageUrl = "~/userDefinedImages/lacrosseCleats.jpg";
-                        break;
-                    case 19:
-                        newButton.ImageUrl = "~/userDefinedImages/lacrosseStick.jpg";
-                        break;
-                    case 20:
-                        newButton.ImageUrl = "~/userDefinedImages/lacrosseHelmet.jpg";
-                        break;
-                    default:
-                        break;
-                }
-                newButton.Height = 155; newButton.Width = 155;
-                newLabel.Height = 155; newLabel.Width = 495;
-                buttonCount++;
-                labelCount++;
-
-
-                panel_test.Controls.Add(newButton);
-                panel_label.Controls.Add(newLabel);
-                
-            }
-            for (int i = 0; i < list_product.Count; i++)
-            {
-                CheckBox newCheckBox = new CheckBox();
-                newCheckBox.Text = "Remove from Cart";
-
-                if (newCheckBox.Checked)
-                {
-                    productCartList.Remove(list_product[i]);
-                }
-                panel_checkBox.Controls.Add(newCheckBox);
-            }
-            
+            Response.Redirect("MainPage.aspx", true);
         }
 
         public void RetriveInfoFromDatabase()
