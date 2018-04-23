@@ -47,7 +47,7 @@ namespace shopping_thing2
 
                 newButton.ID = "newButton" + buttonCount;
                 newLabel.ID = "newLabel" + labelCount;
-                newLabel.Text = $"Product Name:  {list_product[i].ProductName} <br> Product Price:  ${list_product[i].ProductPrice}   <br><br><br><br><br><br><br> ";
+                newLabel.Text = $"Name:  {list_product[i].ProductName} <br> Price:  ${list_product[i].ProductPrice} <br> Description:  {list_product[i].ProductDescription}<br><br><br><br><br><br> ";
                 
                 switch (list_product[i].RecNumber)
                 {
