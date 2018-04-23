@@ -68,8 +68,7 @@
                         </td>
 
                         <td valign="top" class="auto-style30" rowspan="4">
-                            <br />
-                            <asp:Panel ID="panel_test" runat="server">
+                            <asp:Panel ID="panel_test" runat="server" Height="206px">
                             </asp:Panel>
                         </td>
                         <td class="auto-style33">
