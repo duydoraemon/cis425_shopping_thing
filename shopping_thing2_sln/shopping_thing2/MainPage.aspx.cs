@@ -12,6 +12,7 @@ namespace shopping_thing2
         //declares a new list of products
         List<Product> list_product = new List<Product>();
         List<Product> list_productSelected = new List<Product>();
+        List<Product> productCartList = new List<Product>();
 
         //doesn't have dick in it
         protected void Page_Load(object sender, EventArgs e)
@@ -103,6 +104,17 @@ namespace shopping_thing2
                 panel_test.Controls.Add(newButton);
                 panel_label.Controls.Add(newLabel);
             }
+            //creates new checkboxes to add to cart
+            for (int i = 0; i < list_product.Count; i++)
+            {
+                CheckBox newCheckBox = new CheckBox();
+                newCheckBox.Text = "Add to Cart<br><br><br>";
+                if (newCheckBox.Checked)
+                {
+                    productCartList.Add(list_product[i]);
+                }
+                panel_checkBox.Controls.Add(newCheckBox);
+            }
         }
 
         /* connect to database
@@ -176,12 +188,11 @@ namespace shopping_thing2
             }
             reader.Close();
         }
-
-
-
-
-
-
-
+        //add to cart button click event
+        protected void addToCartButton4_Click(object sender, EventArgs e)
+        {
+            Session[productCartList.ToString()] = productCartList;
+            Response.Redirect("ShoppingCart.aspx");
+        }
     }
 }

@@ -80,7 +80,18 @@
                                         </asp:Panel>
                                     
                                     
+                                    </td>
+                                    <td class="auto-style34">
+                                    
+                                    
                                         <asp:Panel ID="panel_label" runat="server" Height="169px" Width="495px">
+                                        </asp:Panel>
+                                   
+                                    </td>
+                                    <td class="auto-style34">
+                                    
+                                    
+                                        <asp:Panel ID="panel_checkBox" runat="server" Height="169px" Width="160px">
                                         </asp:Panel>
                                    
                                     </td>
@@ -88,7 +99,7 @@
                             </table>
                         </td>
                         <td class="auto-style33">
-                            <asp:Button ID="addToCartButton4" runat="server" Text="Add to cart" />
+                            <asp:Button ID="addToCartButton4" runat="server" Text="Add to cart" OnClick="addToCartButton4_Click" />
                             </td>
                     </tr>
                     <tr>

@@ -36,9 +36,9 @@
                         <td class="auto-style2">
                             <asp:ImageButton ID="imgBtn_logo" runat="server" Height="77px" ImageUrl="~/userDefinedImages/companyLogo.png" OnClick="imgBtn_logo_Click1" Width="111px" />
                         </td>
-                        <td class="auto-style25">
+                        <td class="auto-style25" colspan="3">
                             <h4 >
-                            <asp:TextBox ID="TextBox1" runat="server" Width="871px" Height="33px"></asp:TextBox>
+                            <asp:TextBox ID="txt_search" runat="server" Width="871px" Height="33px"></asp:TextBox>
                             <br class="auto-style24" />
                             <span class="auto-style24">Filter By Sport:&nbsp; </span>
                             <asp:DropDownList ID="ddl_sport" runat="server">
@@ -53,7 +53,7 @@
                                     <asp:ListItem Value="L2H">Low to High</asp:ListItem>
                                     <asp:ListItem Value="H2L">High to Low</asp:ListItem>
                             </asp:DropDownList>
-                            <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/Pictures/searchImage.png" Width="30px" />
+                            <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/Pictures/searchImage.png" Width="30px" OnClick="ImageButton2_Click" />
                             </h4>
                         </td>
                         <td class="auto-style9">
@@ -61,7 +61,7 @@
                             </span>
                             <asp:ImageButton ID="img_shoppingCart" runat="server" Height="41px" ImageUrl="~/userDefinedImages/shoppingCartBlue.jpg" Width="49px" CssClass="auto-style24" />
                         &nbsp;<br class="auto-style24" />
-                            <span class="auto-style24">&nbsp;&nbsp; Cart</span></td>
+                            <span class="auto-style24">&nbsp;&nbsp;&nbsp; Home</span></td>
                     </tr>
                     <tr>
                         <td valign="top" class="auto-style4" rowspan="4"="top" >
@@ -78,7 +78,7 @@
                             <span class="auto-style24">Contacts</span></span></h3>
                             <span class="auto-style24">&nbsp;</span></td>
 
-                        <td class="auto-style26">
+                        <td class="auto-style26" colspan="3">
                             <h2>Shopping Cart</h2>
                         </td>
                         <td class="auto-style24" rowspan="4" valign="top">
@@ -99,15 +99,33 @@
                     </tr>
                     <tr>
                         <td class="auto-style40">
+                                        <asp:Panel ID="panel_test" runat="server" Height="169px" Width="230px">
+                                        </asp:Panel>
+                                    
+                                    
+                            </td>
+                        <td class="auto-style40">
+                                    
+                                    
+                                        <asp:Panel ID="panel_label" runat="server" Height="169px" Width="495px">
+                                        </asp:Panel>
+                                   
+                            </td>
+                        <td class="auto-style40">
+                                    
+                                    
+                                        <asp:Panel ID="panel_checkBox" runat="server" Height="169px" Width="160px">
+                                        </asp:Panel>
+                                   
                             </td>
                     </tr>
                     <tr>
-                        <td class="auto-style29">
+                        <td class="auto-style29" colspan="3">
                             <h4 class="auto-style24">Back to Top</h4>
                         </td>
                     </tr>
                     <tr>
-                        <td class="auto-style26">
+                        <td class="auto-style26" colspan="3">
                             <table style="width:100%;">
                                 <tr>
                                     <td class="auto-style21">
