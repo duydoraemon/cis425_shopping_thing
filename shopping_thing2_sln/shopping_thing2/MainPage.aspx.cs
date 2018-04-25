@@ -12,8 +12,6 @@ namespace shopping_thing2
         //declares a new list of products
         List<Product> list_product = new List<Product>();
         List<Product> list_productSelected = new List<Product>();
-        List<Product> productCartList = new List<Product>();
-        List<CheckBox> checkboxCartList = new List<CheckBox>();
 
         //doesn't have dick in it
         protected void Page_Load(object sender, EventArgs e)
@@ -48,9 +46,6 @@ namespace shopping_thing2
                 HyperLink newLabel = new HyperLink();
                 CheckBox newCheckBox = new CheckBox();
 
-                 
-
-                checkboxCartList.Add(newCheckBox);
 
                 newCheckBox.Text = "Add to Cart<br><br><br>";
                 newButton.ID = "newButton" + buttonCount;
@@ -197,9 +192,7 @@ namespace shopping_thing2
         //add to cart button click event
         protected void addToCartButton4_Click(object sender, EventArgs e)
         {
-            
-            Session["productCartList"] = productCartList;
-            Response.Redirect("ShoppingCart.aspx", true);
+            //
         }
 
     }

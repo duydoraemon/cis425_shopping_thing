@@ -41,5 +41,10 @@ namespace shopping_thing2
             this.RecNumber = recNumber; this.ProductID = productID; this.ProductName = productName; this.ProductDescription = productDescription;
             this.ProductPrice = productPrice;
         }
+
+        public override string ToString()
+        {
+            return productName + "<br>" + productPrice + "<br>" + productDescription;
+        }
     }
 }

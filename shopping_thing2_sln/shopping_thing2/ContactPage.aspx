@@ -32,7 +32,7 @@
                         <td class="auto-style33">
                             <asp:Image ID="Image1" runat="server" Height="86px" ImageUrl="~/userDefinedImages/companyLogo.png" Width="119px" CssClass="auto-style24" />
                         </td>
-                        <td class="auto-style25" colspan="3">
+                        <td class="auto-style25" colspan="2">
                             <asp:TextBox ID="TextBox1" runat="server" Width="850px" Height="33px"></asp:TextBox>
                             <br class="auto-style24" />
                             <br />
@@ -60,7 +60,7 @@
                             <span class="auto-style24">Contacts</span></span></h3>
                             <span class="auto-style24">&nbsp;</span></td>
 
-                        <td class="auto-style26" colspan="3">
+                        <td class="auto-style26" colspan="2">
                             <h2>Product Details</h2>
                         </td>
                     </tr>
@@ -72,34 +72,37 @@
                                     
                                     </td>
                         <td class="auto-style26">
+                                        <asp:Button ID="addBtn" runat="server" OnClick="addBtn_Click" Text="Add to Cart" />
+                                    
+                                    
+                                    </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style26" colspan="2">
                                     
                                     
                                         <asp:Panel ID="panel_label" runat="server" Height="169px" Width="495px">
                                         </asp:Panel>
                                    
                                     </td>
-                        <td class="auto-style26">&nbsp;</td>
                     </tr>
                     <tr>
-                        <td class="auto-style26" colspan="3">&nbsp;</td>
+                        <td class="auto-style26" colspan="2">&nbsp;</td>
                     </tr>
                     <tr>
-                        <td class="auto-style26" colspan="3">&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style26" colspan="3">
+                        <td class="auto-style26" colspan="2">
                             <asp:Button ID="btn_test" runat="server" Text="Button" />
-                        </td>
+&nbsp;</td>
                         <td class="auto-style24">&nbsp;</td>
                     </tr>
                     <tr>
-                        <td class="auto-style29" colspan="3">
+                        <td class="auto-style29" colspan="2">
                             <h4 class="auto-style24">Back to Top</h4>
                         </td>
                         <td class="auto-style24">&nbsp;</td>
                     </tr>
                     <tr>
-                        <td class="auto-style26" colspan="3">
+                        <td class="auto-style26" colspan="2">
                             <table style="width:100%;">
                                 <tr>
                                     <td class="auto-style21">

@@ -15,15 +15,13 @@ namespace shopping_thing2
         //declares a new list of products
         List<Product> list_product = new List<Product>();
         List<Product> list_productSelected = new List<Product>();
-        List<Product> productCartList = new List<Product>();
 
         protected void Page_Load(object sender, EventArgs e)
         {
+
             RetriveInfoFromDatabase();
 
-            productCartList = (List<Product>)Session["productCartList"];
-
-            for (int i = 0; i < productCartList.Count; i++)
+            for (int i = 0; i < list_product.Count; i++)
             {
                 int buttonCount = 1;
                 int labelCount = 1;
@@ -31,12 +29,11 @@ namespace shopping_thing2
                 ImageButton newButton = new ImageButton();
                 Label newLabel = new Label();
 
-
                 newButton.ID = "newButton" + buttonCount;
                 newLabel.ID = "newLabel" + labelCount;
-                newLabel.Text = $"Name:  {productCartList[i].ProductName} <br> Price:  ${productCartList[i].ProductPrice} <br> Description:  {productCartList[i].ProductDescription};//<br><br><br><br><br><br> ";
+                newLabel.Text = $"Name:  {list_product[i].ProductName} <br> Price:  ${list_product[i].ProductPrice} <br> Description:  {list_product[i].ProductDescription};//<br><br><br><br><br><br> ";
 
-                switch (productCartList[i].RecNumber)
+                switch (list_product[i].RecNumber)
                 {
                     case 1:
                         newButton.ImageUrl = "~/userDefinedImages/baseballBat.jpg";
@@ -111,17 +108,6 @@ namespace shopping_thing2
                 panel_label.Controls.Add(newLabel);
 
             }
-            for (int i = 0; i < productCartList.Count; i++)
-            {
-                CheckBox newCheckBox = new CheckBox();
-                newCheckBox.Text = "Remove from Cart";
-
-                if (newCheckBox.Checked)
-                {
-                    productCartList.Remove(list_product[i]);
-                }
-                panel_checkBox.Controls.Add(newCheckBox);
-            }
         }
 
         protected void imgBtn_logo_Click1(object sender, ImageClickEventArgs e)
@@ -149,8 +135,6 @@ namespace shopping_thing2
         {
             //records user input and declare variables
             string userInput = txt_search.Text.ToString();
-            string priceFilter = "";
-            string sportFilter = "";
             string query = "";
 
             //establishes connection with server
@@ -163,31 +147,8 @@ namespace shopping_thing2
             var conn = new MySql.Data.MySqlClient.MySqlConnection(dbConnectionString);
             conn.Open();
 
-            //applys filter
-            if (ddl_price.SelectedValue == "H2L")
-            {
-                priceFilter = "desc";
-            }
-            if (ddl_price.SelectedValue == "L2H")
-            {
-                priceFilter = "asc";
-            }
-            if (ddl_sport.SelectedValue != "0")
-            {
-                sportFilter = ddl_sport.SelectedItem.ToString();
-            }
-
             //populates query
-            query = $"select * from products where productName like ('%{userInput}%')";
-
-            if (sportFilter != "")
-            {
-                query += $" and productName like ('%{sportFilter}%')";
-            }
-            if (priceFilter != "")
-            {
-                query += $" order by productPrice {priceFilter}";
-            }
+            query = $"select * from productcart";
 
             //runs Query
             //creates command and reader object using query string and connection
@@ -206,10 +167,10 @@ namespace shopping_thing2
                 int int_recNumber = Convert.ToInt32(recNumber);
                 double double_productPrice = Convert.ToDouble(productPrice);
 
-                //constructs product object and stores in list_product
                 Product tmpProduct = new Product(int_recNumber, productID.ToString(), productName.ToString(), productDescription.ToString(),
                     double_productPrice);
                 list_product.Add(tmpProduct);
+
             }
             reader.Close();
         }
