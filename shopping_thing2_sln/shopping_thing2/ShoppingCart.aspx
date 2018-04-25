@@ -26,6 +26,15 @@
             color: #000000;
             height: 45px;
         }
+        .auto-style41 {
+            height: 95px;
+            text-align: left;
+            width: 268435408px;
+        }
+        .auto-style42 {
+            color: #000000;
+            width: 268435408px;
+        }
         </style>
 </asp:Content>
 
@@ -40,28 +49,15 @@
                             <h4 >
                             <asp:TextBox ID="txt_search" runat="server" Width="871px" Height="33px"></asp:TextBox>
                             <br class="auto-style24" />
-                            <span class="auto-style24">Filter By Sport:&nbsp; </span>
-                            <asp:DropDownList ID="ddl_sport" runat="server">
-                                <asp:ListItem Value="0">No Selection</asp:ListItem>
-                                <asp:ListItem Value="F">Football</asp:ListItem>
-<asp:ListItem Value="B">Baseball</asp:ListItem>
-                                <asp:ListItem Value="H"></asp:ListItem>
-                                <asp:ListItem Value="L">HockeyLacrosse</asp:ListItem>
-                            </asp:DropDownList>
-                                <span class="auto-style24">&nbsp;Sort by Price: </span> <asp:DropDownList ID="ddl_price" runat="server">
-                                    <asp:ListItem Value="0">No Selection</asp:ListItem>
-                                    <asp:ListItem Value="L2H">Low to High</asp:ListItem>
-                                    <asp:ListItem Value="H2L">High to Low</asp:ListItem>
-                            </asp:DropDownList>
-                            <asp:ImageButton ID="imgBtn_search" runat="server" ImageUrl="~/Pictures/searchImage.png" Width="30px" OnClick="imgBtn_search_Click" />
+                            <asp:ImageButton ID="imgBtn_search" runat="server" ImageUrl="~/Pictures/searchImage.png" Width="30px" OnClick="imgBtn_search_Click" ImageAlign="Right" />
                             </h4>
                         </td>
-                        <td class="auto-style9">
+                        <td class="auto-style41">
                             <span class="auto-style24">&nbsp;&nbsp;&nbsp;
                             </span>
-                            <asp:ImageButton ID="img_shoppingCart" runat="server" Height="56px" ImageUrl="~/Pictures/House.png" Width="65px" CssClass="auto-style24" OnClick="img_shoppingCart_Click" />
+                            <asp:ImageButton ID="img_shoppingCart" runat="server" Height="60px" ImageUrl="~/Pictures/House.png" Width="72px" CssClass="auto-style24" OnClick="img_shoppingCart_Click" ImageAlign="Middle" />
                         &nbsp;<br class="auto-style24" />
-                            <span class="auto-style24">&nbsp;&nbsp;&nbsp; Home</span></td>
+                            </td>
                     </tr>
                     <tr>
                         <td valign="top" class="auto-style4" rowspan="4"="top" >
@@ -81,7 +77,7 @@
                         <td class="auto-style26" colspan="3">
                             <h2>Shopping Cart</h2>
                         </td>
-                        <td class="auto-style24" rowspan="4" valign="top">
+                        <td class="auto-style42" rowspan="4" valign="top">
                             <h4>Subtotal:
                                 <asp:Label ID="lbl_sTotal" runat="server" Text="lbl_sTotal"></asp:Label>
 &nbsp;</h4>
@@ -121,35 +117,12 @@
                     </tr>
                     <tr>
                         <td class="auto-style29" colspan="3">
-                            <h4 class="auto-style24">Back to Top</h4>
+                            <h4 class="auto-style24">&nbsp;</h4>
                         </td>
                     </tr>
                     <tr>
                         <td class="auto-style26" colspan="3">
-                            <table style="width:100%;">
-                                <tr>
-                                    <td class="auto-style21">
-                                        <h4 class="auto-style24">Make money with us</h4>
-                                    </td>
-                                    <td class="auto-style20">
-                                        <h4 class="auto-style24">Payment Products</h4>
-                                    </td>
-                                    <td class="auto-style20">
-                                        <h4 class="auto-style24">Let Us Help you</h4>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="auto-style23">xxxxxxxxxx</td>
-                                    <td class="auto-style22">xxxxxxxxxxxxxx</td>
-                                    <td class="auto-style22">xxxxxxxxxx</td>
-                                </tr>
-                                <tr>
-                                    <td class="auto-style23">xxxxxxxxxxxx</td>
-                                    <td class="auto-style22">xxxxxxxx</td>
-                                    <td class="auto-style22">xxxxxxxxxx</td>
-                                </tr>
-                            </table>
-                        </td>
+                            &nbsp;</td>
                     </tr>
                     </table>
             </asp:Content>

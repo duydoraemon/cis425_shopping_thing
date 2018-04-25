@@ -50,9 +50,8 @@
                         <td class="auto-style9">
                             <span class="auto-style15">&nbsp;&nbsp;&nbsp;
                             </span>
-                            <asp:ImageButton ID="img_shoppingCart" runat="server" Height="41px" ImageUrl="~/userDefinedImages/shoppingCartBlue.jpg" Width="49px" CssClass="auto-style15" OnClick="img_shoppingCart_Click" />
-                        &nbsp;<br class="auto-style15" />
-                            <span class="auto-style15">&nbsp;&nbsp; Cart</span></td>
+                            <asp:ImageButton ID="img_shoppingCart" runat="server" Height="55px" ImageUrl="~/userDefinedImages/shoppingCartBlue.jpg" Width="67px" CssClass="auto-style15" OnClick="img_shoppingCart_Click" ImageAlign="Middle" />
+                        </td>
                     </tr>
                     <tr>
                         <td valign"top" class="auto-style4" rowspan="5"="top" >
@@ -116,31 +115,27 @@
                             <table style="width:100%;">
                                 <tr>
                                     <td class="auto-style32" colspan="4">
-                                        <h4>Back to Top</h4>
-                                    </td>
+                                        &nbsp;</td>
                                 </tr>
                                 <tr>
                                     <td class="auto-style21">
-                                        <h4 class="auto-style24">Make money with us</h4>
-                                    </td>
+                                        &nbsp;</td>
                                     <td class="auto-style20">
-                                        <h4 class="auto-style24">Payment Products</h4>
-                                    </td>
+                                        &nbsp;</td>
                                     <td class="auto-style20">
-                                        <h4 class="auto-style24">Let Us Help you</h4>
-                                    </td>
+                                        &nbsp;</td>
                                     <td class="auto-style20" rowspan="3">
                                         &nbsp;</td>
                                 </tr>
                                 <tr>
-                                    <td class="auto-style23">xxxxxxxxxx</td>
-                                    <td class="auto-style22">xxxxxxxxxxxxxx</td>
-                                    <td class="auto-style22">xxxxxxxxxx</td>
+                                    <td class="auto-style23">&nbsp;</td>
+                                    <td class="auto-style22">&nbsp;</td>
+                                    <td class="auto-style22">&nbsp;</td>
                                 </tr>
                                 <tr>
-                                    <td class="auto-style23">xxxxxxxxxxxx</td>
-                                    <td class="auto-style22">xxxxxxxx</td>
-                                    <td class="auto-style22">xxxxxxxxxx</td>
+                                    <td class="auto-style23">&nbsp;</td>
+                                    <td class="auto-style22">&nbsp;</td>
+                                    <td class="auto-style22">&nbsp;</td>
                                 </tr>
                             </table>
                         </td>

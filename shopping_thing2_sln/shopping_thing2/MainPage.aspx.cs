@@ -19,8 +19,10 @@ namespace shopping_thing2
         protected void Page_Load(object sender, EventArgs e)
         {
             RetriveInfoFromDatabase();
+
             panel_test.Visible = false;
             panel_label.Visible = false;
+
             int buttonCount = 1;
             int hyperLinkCount = 1;
             //displays the items, passes information
@@ -29,7 +31,7 @@ namespace shopping_thing2
             {
                 Image newButton = new Image();
                 HyperLink newHyperLink = new HyperLink();
-
+                newButton.ImageAlign = ImageAlign.TextTop;
                 newButton.ID = "newButton" + buttonCount;
                 newHyperLink.ID = "newHyperLink" + hyperLinkCount;
                 newHyperLink.Text = $"Name:  {list_product[i].ProductName} <br> Price:  ${list_product[i].ProductPrice} <br> Description:  {list_product[i].ProductDescription};//<br><br><br><br><br><br> ";
@@ -116,14 +118,10 @@ namespace shopping_thing2
             }
 
             txt_search.Text = Session["searchText"] as string;
-            string sportFilterText = Session["sportFilter"] as string;
-            string priceFilterText = Session["priceFilter"] as string;
 
             if(txt_search.Text != "")
             {
                 RetriveInfoFromDatabase();
-                ddl_price.SelectedValue = priceFilterText;
-                ddl_sport.SelectedValue = sportFilterText;
                 panel_label.Visible = true;
                 panel_test.Visible = true;
             }
@@ -142,6 +140,7 @@ namespace shopping_thing2
         {
             panel_label.Visible = true;
             panel_test.Visible = true;
+            txt_search.Text = "";
         }
 
         /* connect to database

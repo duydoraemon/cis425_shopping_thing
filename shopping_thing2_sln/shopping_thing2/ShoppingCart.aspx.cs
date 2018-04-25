@@ -22,11 +22,13 @@ namespace shopping_thing2
         {
             double subTotal = CalculateTotal();
             double salesTax = .056;
+            double taxTotal;
             double cartTotal;
-            lbl_sTotal.Text = subTotal.ToString();
-            lbl_tax.Text = Convert.ToString(subTotal * salesTax);
-            cartTotal = Convert.ToDouble(lbl_tax.Text) + subTotal;
-            lbl_total.Text = cartTotal.ToString();
+            lbl_sTotal.Text = $"${subTotal:f2}";
+            taxTotal = subTotal * salesTax;
+            lbl_tax.Text = $"${taxTotal:f2}";
+            cartTotal = taxTotal + subTotal;
+            lbl_total.Text = $"${cartTotal:f2}";
 
             RetriveInfoFromDatabase();
             int buttonCount = 1;
@@ -37,6 +39,8 @@ namespace shopping_thing2
 
                 Image newButton = new Image();
                 Label newLabel = new Label();
+
+                newButton.ImageAlign = ImageAlign.TextTop;
 
                 newButton.ID = "newButton" + buttonCount;
                 newLabel.ID = "newLabel" + labelCount;
@@ -298,8 +302,6 @@ namespace shopping_thing2
             //redirect to main page
             //save txt_search.Text in Session   
             Session["searchText"] = txt_search.Text;
-            Session["sportFilter"] = ddl_sport.SelectedValue;
-            Session["priceFilter"] = ddl_price.SelectedValue;
 
             Response.Redirect("MainPage.aspx", true);
         }
