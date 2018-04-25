@@ -42,6 +42,7 @@ namespace shopping_thing2
             {
                 int buttonCount = 1;
                 int labelCount = 1;
+                
 
                 ImageButton newButton = new ImageButton();
                 HyperLink newLabel = new HyperLink();
@@ -103,9 +104,15 @@ namespace shopping_thing2
                 }
                 newButton.Height = 155; newButton.Width = 155;
                 newLabel.Height = 155; newLabel.Width = 495;
-                newLabel.NavigateUrl = "ContactPage.aspx";
-                //saves the product to be transferred to contact page
-                Session["productInfo"] = list_product[i];
+
+                //makes a jquery string to pass information to contact page
+                string recNumber = "0";
+                recNumber = list_product[i].RecNumber.ToString();
+                newLabel.NavigateUrl = $"ContactPage.aspx?recNumber={recNumber}";
+                
+                
+
+
                 buttonCount++;
                 labelCount++;
 

@@ -87,7 +87,9 @@
                         <td class="auto-style26" colspan="3">&nbsp;</td>
                     </tr>
                     <tr>
-                        <td class="auto-style26" colspan="3">&nbsp;</td>
+                        <td class="auto-style26" colspan="3">
+                            <asp:Button ID="btn_test" runat="server" Text="Button" />
+                        </td>
                         <td class="auto-style24">&nbsp;</td>
                     </tr>
                     <tr>

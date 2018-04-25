@@ -12,8 +12,11 @@ namespace shopping_thing2
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            Product productInfo = (Product)Session["productInfo"];
-            RetriveInfoFromDatabase(productInfo);
+            // Product productInfo = (Product)Session["productInfo"];
+            // RetriveInfoFromDatabase(productInfo);
+            string recNumber = Request.QueryString["recNumber"];
+
+            btn_test.Text = recNumber;
 
             int buttonCount = 1;
             int labelCount = 1;
@@ -22,85 +25,85 @@ namespace shopping_thing2
             HyperLink newLabel = new HyperLink();
             CheckBox newCheckBox = new CheckBox();
 
-            newButton.ID = "newButton" + buttonCount;
-            newLabel.ID = "newLabel" + labelCount;
-            newLabel.Text = $"Name:  {productInfo.ProductName} <br> Price:  ${productInfo.ProductPrice} <br> Description:  {productInfo.ProductDescription};//<br><br><br><br><br><br> ";
+            //newButton.ID = "newButton" + buttonCount;
+            //newLabel.ID = "newLabel" + labelCount;
+            //newLabel.Text = $"Name:  {productInfo.ProductName} <br> Price:  ${productInfo.ProductPrice} <br> Description:  {productInfo.ProductDescription};//<br><br><br><br><br><br> ";
 
 
-            switch (productInfo.RecNumber)
-            {
-                case 1:
-                    newButton.ImageUrl = "~/userDefinedImages/baseballBat.jpg";
-                    break;
-                case 2:
-                    newButton.ImageUrl = "~/userDefinedImages/baseballHelmet.jpg";
-                    break;
-                case 3:
-                    newButton.ImageUrl = "~/userDefinedImages/baseballCleats.jpg";
-                    break;
-                case 4:
-                    newButton.ImageUrl = "~/userDefinedImages/baseBallGlove.jpg";
-                    break;
-                case 5:
-                    newButton.ImageUrl = "~/userDefinedImages/baseball.jpg";
-                    break;
-                case 6:
-                    newButton.ImageUrl = "~/userDefinedImages/footballPads.jpg";
-                    break;
-                case 7:
-                    newButton.ImageUrl = "~/userDefinedImages/footballs.jpg";
-                    break;
-                case 8:
-                    newButton.ImageUrl = "~/userDefinedImages/footballHelment.jpg";
-                    break;
-                case 9:
-                    newButton.ImageUrl = "~/userDefinedImages/footballCleats.jpg";
-                    break;
-                case 10:
-                    newButton.ImageUrl = "~/userDefinedImages/football Gloves.jpg";
-                    break;
-                case 11:
-                    newButton.ImageUrl = "~/userDefinedImages/hockeyStick.jpg";
-                    break;
-                case 12:
-                    newButton.ImageUrl = "~/userDefinedImages/HockeyHelmet.jpg";
-                    break;
-                case 13:
-                    newButton.ImageUrl = "~/userDefinedImages/hockeyGloves.jpg";
-                    break;
-                case 14:
-                    newButton.ImageUrl = "~/userDefinedImages/hockeyPuck.jpg";
-                    break;
-                case 15:
-                    newButton.ImageUrl = "~/userDefinedImages/hockyPads.jpg";
-                    break;
-                case 16:
-                    newButton.ImageUrl = "~/userDefinedImages/lacrossePads.jpg";
-                    break;
-                case 17:
-                    newButton.ImageUrl = "~/userDefinedImages/lacrossegloves.jpg";
-                    break;
-                case 18:
-                    newButton.ImageUrl = "~/userDefinedImages/lacrosseCleats.jpg";
-                    break;
-                case 19:
-                    newButton.ImageUrl = "~/userDefinedImages/lacrosseStick.jpg";
-                    break;
-                case 20:
-                    newButton.ImageUrl = "~/userDefinedImages/lacrosseHelmet.jpg";
-                    break;
-                default:
-                    break;
-            }
-            newButton.Height = 155; newButton.Width = 155;
-            newLabel.Height = 155; newLabel.Width = 495;
-            newLabel.NavigateUrl = "ContactPage.aspx";
+            //switch (productInfo.RecNumber)
+            //{
+            //    case 1:
+            //        newButton.ImageUrl = "~/userDefinedImages/baseballBat.jpg";
+            //        break;
+            //    case 2:
+            //        newButton.ImageUrl = "~/userDefinedImages/baseballHelmet.jpg";
+            //        break;
+            //    case 3:
+            //        newButton.ImageUrl = "~/userDefinedImages/baseballCleats.jpg";
+            //        break;
+            //    case 4:
+            //        newButton.ImageUrl = "~/userDefinedImages/baseBallGlove.jpg";
+            //        break;
+            //    case 5:
+            //        newButton.ImageUrl = "~/userDefinedImages/baseball.jpg";
+            //        break;
+            //    case 6:
+            //        newButton.ImageUrl = "~/userDefinedImages/footballPads.jpg";
+            //        break;
+            //    case 7:
+            //        newButton.ImageUrl = "~/userDefinedImages/footballs.jpg";
+            //        break;
+            //    case 8:
+            //        newButton.ImageUrl = "~/userDefinedImages/footballHelment.jpg";
+            //        break;
+            //    case 9:
+            //        newButton.ImageUrl = "~/userDefinedImages/footballCleats.jpg";
+            //        break;
+            //    case 10:
+            //        newButton.ImageUrl = "~/userDefinedImages/football Gloves.jpg";
+            //        break;
+            //    case 11:
+            //        newButton.ImageUrl = "~/userDefinedImages/hockeyStick.jpg";
+            //        break;
+            //    case 12:
+            //        newButton.ImageUrl = "~/userDefinedImages/HockeyHelmet.jpg";
+            //        break;
+            //    case 13:
+            //        newButton.ImageUrl = "~/userDefinedImages/hockeyGloves.jpg";
+            //        break;
+            //    case 14:
+            //        newButton.ImageUrl = "~/userDefinedImages/hockeyPuck.jpg";
+            //        break;
+            //    case 15:
+            //        newButton.ImageUrl = "~/userDefinedImages/hockyPads.jpg";
+            //        break;
+            //    case 16:
+            //        newButton.ImageUrl = "~/userDefinedImages/lacrossePads.jpg";
+            //        break;
+            //    case 17:
+            //        newButton.ImageUrl = "~/userDefinedImages/lacrossegloves.jpg";
+            //        break;
+            //    case 18:
+            //        newButton.ImageUrl = "~/userDefinedImages/lacrosseCleats.jpg";
+            //        break;
+            //    case 19:
+            //        newButton.ImageUrl = "~/userDefinedImages/lacrosseStick.jpg";
+            //        break;
+            //    case 20:
+            //        newButton.ImageUrl = "~/userDefinedImages/lacrosseHelmet.jpg";
+            //        break;
+            //    default:
+            //        break;
+            //}
+            //newButton.Height = 155; newButton.Width = 155;
+            //newLabel.Height = 155; newLabel.Width = 495;
+            //newLabel.NavigateUrl = "ContactPage.aspx";
 
-            buttonCount++;
-            labelCount++;
+            //buttonCount++;
+            //labelCount++;
 
-            panel_test.Controls.Add(newButton);
-            panel_label.Controls.Add(newLabel);
+            //panel_test.Controls.Add(newButton);
+            //panel_label.Controls.Add(newLabel);
         }
 
         public void RetriveInfoFromDatabase(Product productInfo)
