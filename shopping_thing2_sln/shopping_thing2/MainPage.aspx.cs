@@ -37,7 +37,7 @@ namespace shopping_thing2
             //retrieves info
             RetriveInfoFromDatabase();
 
-            //displays the items... this Part is a total bitch. I can't get it to display on seperate lines
+            //displays the items
             for (int i = 0; i < list_product.Count; i++)
             {
                 int buttonCount = 1;
@@ -104,6 +104,8 @@ namespace shopping_thing2
                 newButton.Height = 155; newButton.Width = 155;
                 newLabel.Height = 155; newLabel.Width = 495;
                 newLabel.NavigateUrl = "ContactPage.aspx";
+                //saves the product to be transferred to contact page
+                Session["productInfo"] = list_product[i];
                 buttonCount++;
                 labelCount++;
 
@@ -193,15 +195,5 @@ namespace shopping_thing2
             Response.Redirect("ShoppingCart.aspx", true);
         }
 
-        public void AddToCart(List<CheckBox> checkboxCartList)
-        {
-            for (int i = 0; i < checkboxCartList.Count; i++)
-            {
-                if (checkboxCartList[i].Checked)
-                {
-                    productCartList.Add(list_product[i]);
-                }
-            }
-        }
     }
 }
