@@ -13,84 +13,88 @@ namespace shopping_thing2
         List<Product> list_product = new List<Product>();
         List<Product> list_productSelected = new List<Product>();
 
-        //empty... maybe consider preloading all information or some select information?
-        protected void Page_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        /* records List of selected items
-         * navigates user to shoppingCart page */
-        protected void img_shoppingCart_Click(object sender, ImageClickEventArgs e)
-        {
-            //nagivates to shoppingCart Page
-            Response.Redirect("ShoppingCart.aspx", true);
-        }
-
         /* retrives info from database
          * displays the items in the list
          * make jquery string to pass information to contactPage */
-        protected void imgBtn_search_Click(object sender, ImageClickEventArgs e)
+        protected void Page_Load(object sender, EventArgs e)
         {
-            //retrieves info
             RetriveInfoFromDatabase();
-
+            panel_test.Visible = false;
+            panel_label.Visible = false;
+            int buttonCount = 1;
+            int hyperLinkCount = 1;
             //displays the items, passes information
             //adds control to panel
             for (int i = 0; i < list_product.Count; i++)
             {
-                int buttonCount = 1;
-                int hyperLinkCount = 1;
-                
-
                 Image newButton = new Image();
                 HyperLink newHyperLink = new HyperLink();
 
                 newButton.ID = "newButton" + buttonCount;
                 newHyperLink.ID = "newHyperLink" + hyperLinkCount;
                 newHyperLink.Text = $"Name:  {list_product[i].ProductName} <br> Price:  ${list_product[i].ProductPrice} <br> Description:  {list_product[i].ProductDescription};//<br><br><br><br><br><br> ";
-                
+
                 switch (list_product[i].RecNumber)
                 {
-                    case 1: newButton.ImageUrl = "~/userDefinedImages/baseballBat.jpg";
+                    case 1:
+                        newButton.ImageUrl = "~/userDefinedImages/baseballBat.jpg";
                         break;
-                    case 2: newButton.ImageUrl = "~/userDefinedImages/baseballHelmet.jpg";
+                    case 2:
+                        newButton.ImageUrl = "~/userDefinedImages/baseballHelmet.jpg";
                         break;
-                    case 3: newButton.ImageUrl = "~/userDefinedImages/baseballCleats.jpg";
+                    case 3:
+                        newButton.ImageUrl = "~/userDefinedImages/baseballCleats.jpg";
                         break;
-                    case 4: newButton.ImageUrl = "~/userDefinedImages/baseBallGlove.jpg";
+                    case 4:
+                        newButton.ImageUrl = "~/userDefinedImages/baseBallGlove.jpg";
                         break;
-                    case 5: newButton.ImageUrl = "~/userDefinedImages/baseball.jpg";
+                    case 5:
+                        newButton.ImageUrl = "~/userDefinedImages/baseball.jpg";
                         break;
-                    case 6: newButton.ImageUrl = "~/userDefinedImages/footballPads.jpg";
+                    case 6:
+                        newButton.ImageUrl = "~/userDefinedImages/footballPads.jpg";
                         break;
-                    case 7: newButton.ImageUrl = "~/userDefinedImages/footballs.jpg";
+                    case 7:
+                        newButton.ImageUrl = "~/userDefinedImages/footballs.jpg";
                         break;
-                    case 8: newButton.ImageUrl = "~/userDefinedImages/footballHelment.jpg";
+                    case 8:
+                        newButton.ImageUrl = "~/userDefinedImages/footballHelment.jpg";
                         break;
-                    case 9: newButton.ImageUrl = "~/userDefinedImages/footballCleats.jpg";
+                    case 9:
+                        newButton.ImageUrl = "~/userDefinedImages/footballCleats.jpg";
                         break;
-                    case 10: newButton.ImageUrl = "~/userDefinedImages/football Gloves.jpg";
+                    case 10:
+                        newButton.ImageUrl = "~/userDefinedImages/football Gloves.jpg";
                         break;
-                    case 11: newButton.ImageUrl = "~/userDefinedImages/hockeyStick.jpg";
+                    case 11:
+                        newButton.ImageUrl = "~/userDefinedImages/hockeyStick.jpg";
                         break;
-                    case 12: newButton.ImageUrl = "~/userDefinedImages/HockeyHelmet.jpg";
+                    case 12:
+                        newButton.ImageUrl = "~/userDefinedImages/HockeyHelmet.jpg";
                         break;
-                    case 13: newButton.ImageUrl = "~/userDefinedImages/hockeyGloves.jpg";
+                    case 13:
+                        newButton.ImageUrl = "~/userDefinedImages/hockeyGloves.jpg";
                         break;
-                    case 14: newButton.ImageUrl = "~/userDefinedImages/hockeyPuck.jpg";
+                    case 14:
+                        newButton.ImageUrl = "~/userDefinedImages/hockeyPuck.jpg";
                         break;
-                    case 15: newButton.ImageUrl = "~/userDefinedImages/hockyPads.jpg";
+                    case 15:
+                        newButton.ImageUrl = "~/userDefinedImages/hockyPads.jpg";
                         break;
-                    case 16: newButton.ImageUrl = "~/userDefinedImages/lacrossePads.jpg";
+                    case 16:
+                        newButton.ImageUrl = "~/userDefinedImages/lacrossePads.jpg";
                         break;
-                    case 17: newButton.ImageUrl = "~/userDefinedImages/lacrossegloves.jpg";
+                    case 17:
+                        newButton.ImageUrl = "~/userDefinedImages/lacrossegloves.jpg";
                         break;
-                    case 18: newButton.ImageUrl = "~/userDefinedImages/lacrosseCleats.jpg";
+                    case 18:
+                        newButton.ImageUrl = "~/userDefinedImages/lacrosseCleats.jpg";
                         break;
-                    case 19: newButton.ImageUrl = "~/userDefinedImages/lacrosseStick.jpg";
+                    case 19:
+                        newButton.ImageUrl = "~/userDefinedImages/lacrosseStick.jpg";
                         break;
-                    case 20: newButton.ImageUrl = "~/userDefinedImages/lacrosseHelmet.jpg";
+                    case 20:
+                        newButton.ImageUrl = "~/userDefinedImages/lacrosseHelmet.jpg";
                         break;
                     default:
                         break;
@@ -111,6 +115,33 @@ namespace shopping_thing2
                 panel_label.Controls.Add(newHyperLink);
             }
 
+            txt_search.Text = Session["searchText"] as string;
+            string sportFilterText = Session["sportFilter"] as string;
+            string priceFilterText = Session["priceFilter"] as string;
+
+            if(txt_search.Text != "")
+            {
+                RetriveInfoFromDatabase();
+                ddl_price.SelectedValue = priceFilterText;
+                ddl_sport.SelectedValue = sportFilterText;
+                panel_label.Visible = true;
+                panel_test.Visible = true;
+            }
+        }
+
+        /* records List of selected items
+         * navigates user to shoppingCart page */
+        protected void img_shoppingCart_Click(object sender, ImageClickEventArgs e)
+        {
+            //nagivates to shoppingCart Page
+            Response.Redirect("ShoppingCart.aspx", true);
+        }
+
+        //makes panels visible for user
+        protected void imgBtn_search_Click(object sender, ImageClickEventArgs e)
+        {
+            panel_label.Visible = true;
+            panel_test.Visible = true;
         }
 
         /* connect to database
@@ -119,7 +150,7 @@ namespace shopping_thing2
         public void RetriveInfoFromDatabase()
         {
             //records user input and declare variables
-            string userInput = txt_search.Text.ToString();
+            string userInput = txt_search.Text;
             string priceFilter = "";
             string sportFilter = "";
             string query = "";

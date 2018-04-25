@@ -53,7 +53,7 @@
                                     <asp:ListItem Value="L2H">Low to High</asp:ListItem>
                                     <asp:ListItem Value="H2L">High to Low</asp:ListItem>
                             </asp:DropDownList>
-                            <asp:ImageButton ID="imgBtn_search" runat="server" ImageUrl="~/Pictures/searchImage.png" Width="30px" />
+                            <asp:ImageButton ID="imgBtn_search" runat="server" ImageUrl="~/Pictures/searchImage.png" Width="30px" OnClick="imgBtn_search_Click" />
                             </h4>
                         </td>
                         <td class="auto-style9">

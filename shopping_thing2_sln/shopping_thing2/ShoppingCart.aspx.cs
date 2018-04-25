@@ -29,11 +29,11 @@ namespace shopping_thing2
             lbl_total.Text = cartTotal.ToString();
 
             RetriveInfoFromDatabase();
+            int buttonCount = 1;
+            int labelCount = 1;
 
             for (int i = 0; i < list_product.Count; i++)
             {
-                int buttonCount = 1;
-                int labelCount = 1;
 
                 Image newButton = new Image();
                 Label newLabel = new Label();
@@ -129,18 +129,12 @@ namespace shopping_thing2
         //for the logo. takes you back to the homepage
         protected void imgBtn_logo_Click1(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("MainPage.aspx", true);
+            Response.Redirect("MainPage.aspx",true);
         }
 
         protected void ImageButton2_Click(object sender, ImageClickEventArgs e)                               //idk where this button is but im too afraid to delete the codde
         {
-            //redirect to main page
-            //save txt_search.Text in Session   
-            Session["searchText"] = txt_search;
-            Session["sportFilter"] = ddl_sport;
-            Session["priceFilter"] = ddl_price;
-
-            Response.Redirect("MainPage.aspx", true);
+            //lol im scared too, just leave it
         }
 
         //retrieves information from proudctCart
@@ -190,7 +184,7 @@ namespace shopping_thing2
         //the house takes you back to the main page
         protected void img_shoppingCart_Click(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("MainPage.aspx", true);
+            Response.Redirect("MainPage.aspx");
         }
 
         //access databases and deletes all items in productCart table and hides the panel
@@ -298,7 +292,16 @@ namespace shopping_thing2
             panel_test.Visible = false;
             panel_checkBox.Visible = false;
         }
+        //search button click event
+        protected void imgBtn_search_Click(object sender, ImageClickEventArgs e)
+        {
+            //redirect to main page
+            //save txt_search.Text in Session   
+            Session["searchText"] = txt_search.Text;
+            Session["sportFilter"] = ddl_sport.SelectedValue;
+            Session["priceFilter"] = ddl_price.SelectedValue;
 
-
+            Response.Redirect("MainPage.aspx", true);
+        }
     }
 }
