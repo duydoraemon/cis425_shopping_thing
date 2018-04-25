@@ -13,13 +13,13 @@ namespace shopping_thing2 {
     public partial class ContactPage {
         
         /// <summary>
-        /// Image1 control.
+        /// imgBtn_logo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
+        protected global::System.Web.UI.WebControls.ImageButton imgBtn_logo;
         
         /// <summary>
         /// TextBox1 control.
@@ -40,13 +40,13 @@ namespace shopping_thing2 {
         protected global::System.Web.UI.WebControls.ImageButton ImageButton2;
         
         /// <summary>
-        /// ImageButton1 control.
+        /// imgBtn_shoppingCart control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ImageButton1;
+        protected global::System.Web.UI.WebControls.ImageButton imgBtn_shoppingCart;
         
         /// <summary>
         /// panel_test control.
@@ -74,14 +74,5 @@ namespace shopping_thing2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel panel_label;
-        
-        /// <summary>
-        /// btn_test control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_test;
     }
 }

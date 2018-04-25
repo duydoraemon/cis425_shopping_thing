@@ -53,7 +53,7 @@
                                     <asp:ListItem Value="L2H">Low to High</asp:ListItem>
                                     <asp:ListItem Value="H2L">High to Low</asp:ListItem>
                             </asp:DropDownList>
-                            <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/Pictures/searchImage.png" Width="30px" OnClick="ImageButton2_Click" />
+                            <asp:ImageButton ID="imgBtn_search" runat="server" ImageUrl="~/Pictures/searchImage.png" Width="30px" />
                             </h4>
                         </td>
                         <td class="auto-style9">
@@ -92,14 +92,14 @@
                                 <asp:Label ID="lbl_total" runat="server" Text="lbl_total"></asp:Label>
                             </h4>
                             <p>
-                            <asp:Button ID="addToCartButton3" runat="server" Text="Checkout" Width="150px" Height="40px" OnClick="addToCartButton3_Click" BackColor="#66FF33" />
+                            <asp:Button ID="btn_checkout" runat="server" Text="Checkout" Width="150px" Height="40px" OnClick="btn_checkout_Click" BackColor="#66FF33" />
                             </p>
-                            <asp:Button ID="Button1" runat="server" Text="Remove From Cart" Height="40px" Width="150px" BackColor="Red" />
+                            <asp:Button ID="btn_cancel" runat="server" Text="Cancel Purchase" Height="40px" Width="150px" BackColor="Red" OnClick="btn_cancel_Click" />
                         </td>
                     </tr>
                     <tr>
                         <td class="auto-style40">
-                                        <asp:Panel ID="panel_test" runat="server" Height="169px" Width="230px">
+                                        <asp:Panel ID="panel_test" runat="server" Height="169px" AutoPostBack="true" Width="230px">
                                         </asp:Panel>
                                     
                                     
@@ -107,14 +107,14 @@
                         <td class="auto-style40">
                                     
                                     
-                                        <asp:Panel ID="panel_label" runat="server" Height="169px" Width="495px">
+                                        <asp:Panel ID="panel_label" runat="server" Height="169px" AutoPostBack="true" Width="495px">
                                         </asp:Panel>
                                    
                             </td>
                         <td class="auto-style40">
                                     
                                     
-                                        <asp:Panel ID="panel_checkBox" runat="server" Height="169px" Width="160px">
+                                        <asp:Panel ID="panel_checkBox" runat="server" Height="169px" AutoPostBack="true" Width="160px">
                                         </asp:Panel>
                                    
                             </td>

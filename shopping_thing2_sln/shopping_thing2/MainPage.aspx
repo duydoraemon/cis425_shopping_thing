@@ -99,8 +99,7 @@
                             </table>
                         </td>
                         <td class="auto-style33">
-                            <asp:Button ID="addToCartButton4" runat="server" Text="Add to cart" OnClick="addToCartButton4_Click" />
-                            </td>
+                            &nbsp;</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
@@ -110,8 +109,7 @@
                     </tr>
                     <tr>
                         <td class="auto-style17">
-                            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="ShoppingCart.aspx">HyperLink</asp:HyperLink>
-                        </td>
+                            &nbsp;</td>
                     </tr>
                     <tr>
                         <td class="auto-style11">

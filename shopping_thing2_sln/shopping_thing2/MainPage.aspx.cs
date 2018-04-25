@@ -13,44 +13,42 @@ namespace shopping_thing2
         List<Product> list_product = new List<Product>();
         List<Product> list_productSelected = new List<Product>();
 
-        //doesn't have dick in it
+        //empty... maybe consider preloading all information or some select information?
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         /* records List of selected items
          * navigates user to shoppingCart page */
         protected void img_shoppingCart_Click(object sender, ImageClickEventArgs e)
         {
-
             //nagivates to shoppingCart Page
             Response.Redirect("ShoppingCart.aspx", true);
         }
 
         /* retrives info from database
-         * displays the items in the list*/
+         * displays the items in the list
+         * make jquery string to pass information to contactPage */
         protected void imgBtn_search_Click(object sender, ImageClickEventArgs e)
         {
             //retrieves info
             RetriveInfoFromDatabase();
 
-            //displays the items
+            //displays the items, passes information
+            //adds control to panel
             for (int i = 0; i < list_product.Count; i++)
             {
                 int buttonCount = 1;
-                int labelCount = 1;
+                int hyperLinkCount = 1;
                 
 
-                ImageButton newButton = new ImageButton();
-                HyperLink newLabel = new HyperLink();
-                CheckBox newCheckBox = new CheckBox();
+                Image newButton = new Image();
+                HyperLink newHyperLink = new HyperLink();
 
-
-                newCheckBox.Text = "Add to Cart<br><br><br>";
                 newButton.ID = "newButton" + buttonCount;
-                newLabel.ID = "newLabel" + labelCount;
-                newLabel.Text = $"Name:  {list_product[i].ProductName} <br> Price:  ${list_product[i].ProductPrice} <br> Description:  {list_product[i].ProductDescription};//<br><br><br><br><br><br> ";
+                newHyperLink.ID = "newHyperLink" + hyperLinkCount;
+                newHyperLink.Text = $"Name:  {list_product[i].ProductName} <br> Price:  ${list_product[i].ProductPrice} <br> Description:  {list_product[i].ProductDescription};//<br><br><br><br><br><br> ";
                 
                 switch (list_product[i].RecNumber)
                 {
@@ -98,22 +96,19 @@ namespace shopping_thing2
                         break;
                 }
                 newButton.Height = 155; newButton.Width = 155;
-                newLabel.Height = 155; newLabel.Width = 495;
+                newHyperLink.Height = 155; newHyperLink.Width = 495;
 
                 //makes a jquery string to pass information to contact page
                 string recNumber = "0";
                 recNumber = list_product[i].RecNumber.ToString();
-                newLabel.NavigateUrl = $"ContactPage.aspx?recNumber={recNumber}";
-                
-                
-
+                newHyperLink.NavigateUrl = $"ContactPage.aspx?recNumber={recNumber}";
 
                 buttonCount++;
-                labelCount++;
+                hyperLinkCount++;
 
-                panel_checkBox.Controls.Add(newCheckBox);
+                //adds controls to panel
                 panel_test.Controls.Add(newButton);
-                panel_label.Controls.Add(newLabel);
+                panel_label.Controls.Add(newHyperLink);
             }
 
         }
@@ -188,11 +183,6 @@ namespace shopping_thing2
                 list_product.Add(tmpProduct);
             }
             reader.Close();
-        }
-        //add to cart button click event
-        protected void addToCartButton4_Click(object sender, EventArgs e)
-        {
-            //
         }
 
     }

@@ -12,100 +12,106 @@ namespace shopping_thing2
         List<Product> list_product = new List<Product>();
         Product addProductToCart;
 
+        /* receives queryString from main page
+         * checks string against database
+         * displays the correct item images and label */
         protected void Page_Load(object sender, EventArgs e)
         {
+            
+            //receives query string from main page
             string recNumber = Request.QueryString["recNumber"];
+            //checks string against database
             Product product = RetriveInfoFromDatabase(recNumber);
             addProductToCart = product;
 
-            btn_test.Text = recNumber;
-
-            int buttonCount = 1;
+            //creates images, labels correctly.
+            int imageCount = 1;
             int labelCount = 1;
 
-            ImageButton newButton = new ImageButton();
-            HyperLink newLabel = new HyperLink();
+            Image newImage = new Image();
+            Label newLabel = new Label();
 
-            newButton.ID = "newButton" + buttonCount;
+            newImage.ID = "newImage" + imageCount;
             newLabel.ID = "newLabel" + labelCount;
             newLabel.Text = $"Name:  {product.ProductName} <br> Price:  ${product.ProductPrice} <br> Description:  {product.ProductDescription};//<br><br><br><br><br><br> ";
-
 
             switch (product.RecNumber)
             {
                 case 1:
-                    newButton.ImageUrl = "~/userDefinedImages/baseballBat.jpg";
+                    newImage.ImageUrl = "~/userDefinedImages/baseballBat.jpg";
                     break;
                 case 2:
-                    newButton.ImageUrl = "~/userDefinedImages/baseballHelmet.jpg";
+                    newImage.ImageUrl = "~/userDefinedImages/baseballHelmet.jpg";
                     break;
                 case 3:
-                    newButton.ImageUrl = "~/userDefinedImages/baseballCleats.jpg";
+                    newImage.ImageUrl = "~/userDefinedImages/baseballCleats.jpg";
                     break;
                 case 4:
-                    newButton.ImageUrl = "~/userDefinedImages/baseBallGlove.jpg";
+                    newImage.ImageUrl = "~/userDefinedImages/baseBallGlove.jpg";
                     break;
                 case 5:
-                    newButton.ImageUrl = "~/userDefinedImages/baseball.jpg";
+                    newImage.ImageUrl = "~/userDefinedImages/baseball.jpg";
                     break;
                 case 6:
-                    newButton.ImageUrl = "~/userDefinedImages/footballPads.jpg";
+                    newImage.ImageUrl = "~/userDefinedImages/footballPads.jpg";
                     break;
                 case 7:
-                    newButton.ImageUrl = "~/userDefinedImages/footballs.jpg";
+                    newImage.ImageUrl = "~/userDefinedImages/footballs.jpg";
                     break;
                 case 8:
-                    newButton.ImageUrl = "~/userDefinedImages/footballHelment.jpg";
+                    newImage.ImageUrl = "~/userDefinedImages/footballHelment.jpg";
                     break;
                 case 9:
-                    newButton.ImageUrl = "~/userDefinedImages/footballCleats.jpg";
+                    newImage.ImageUrl = "~/userDefinedImages/footballCleats.jpg";
                     break;
                 case 10:
-                    newButton.ImageUrl = "~/userDefinedImages/football Gloves.jpg";
+                    newImage.ImageUrl = "~/userDefinedImages/football Gloves.jpg";
                     break;
                 case 11:
-                    newButton.ImageUrl = "~/userDefinedImages/hockeyStick.jpg";
+                    newImage.ImageUrl = "~/userDefinedImages/hockeyStick.jpg";
                     break;
                 case 12:
-                    newButton.ImageUrl = "~/userDefinedImages/HockeyHelmet.jpg";
+                    newImage.ImageUrl = "~/userDefinedImages/HockeyHelmet.jpg";
                     break;
                 case 13:
-                    newButton.ImageUrl = "~/userDefinedImages/hockeyGloves.jpg";
+                    newImage.ImageUrl = "~/userDefinedImages/hockeyGloves.jpg";
                     break;
                 case 14:
-                    newButton.ImageUrl = "~/userDefinedImages/hockeyPuck.jpg";
+                    newImage.ImageUrl = "~/userDefinedImages/hockeyPuck.jpg";
                     break;
                 case 15:
-                    newButton.ImageUrl = "~/userDefinedImages/hockyPads.jpg";
+                    newImage.ImageUrl = "~/userDefinedImages/hockyPads.jpg";
                     break;
                 case 16:
-                    newButton.ImageUrl = "~/userDefinedImages/lacrossePads.jpg";
+                    newImage.ImageUrl = "~/userDefinedImages/lacrossePads.jpg";
                     break;
                 case 17:
-                    newButton.ImageUrl = "~/userDefinedImages/lacrossegloves.jpg";
+                    newImage.ImageUrl = "~/userDefinedImages/lacrossegloves.jpg";
                     break;
                 case 18:
-                    newButton.ImageUrl = "~/userDefinedImages/lacrosseCleats.jpg";
+                    newImage.ImageUrl = "~/userDefinedImages/lacrosseCleats.jpg";
                     break;
                 case 19:
-                    newButton.ImageUrl = "~/userDefinedImages/lacrosseStick.jpg";
+                    newImage.ImageUrl = "~/userDefinedImages/lacrosseStick.jpg";
                     break;
                 case 20:
-                    newButton.ImageUrl = "~/userDefinedImages/lacrosseHelmet.jpg";
+                    newImage.ImageUrl = "~/userDefinedImages/lacrosseHelmet.jpg";
                     break;
                 default:
                     break;
             }
-            newButton.Height = 155; newButton.Width = 155;
+
+            newImage.Height = 155; newImage.Width = 155;
             newLabel.Height = 155; newLabel.Width = 495;
 
-            buttonCount++;
+            imageCount++;
             labelCount++;
 
-            panel_test.Controls.Add(newButton);
+            panel_test.Controls.Add(newImage);
             panel_label.Controls.Add(newLabel);
         }
 
+        /* uses cartRecNumber to receive product information */
         public Product RetriveInfoFromDatabase(string cartRecNumber)
         {
             //records user input and declare variables
@@ -150,6 +156,8 @@ namespace shopping_thing2
             return list_product[0];
         }
         //click event for adding product to cart
+
+        /* runs query to insert the item on the page to database */
         protected void addBtn_Click(object sender, EventArgs e)
         {
             string query = "";
@@ -166,7 +174,7 @@ namespace shopping_thing2
 
             //populates query
             query = $"Insert into productcart (productcartID,productCartName,productCartDescription,productCartPrice) " +
-                $"values ('{addProductToCart.ProductID}', '{addProductToCart.ProductID}','{addProductToCart.ProductDescription}','{addProductToCart.ProductPrice}'";
+                $"values ('{addProductToCart.ProductID}', '{addProductToCart.ProductName}','{addProductToCart.ProductDescription}','{addProductToCart.ProductPrice}')";
 
             //runs Query
             //creates command and reader object using query string and connection
@@ -186,6 +194,16 @@ namespace shopping_thing2
                 double double_productPrice = Convert.ToDouble(productPrice);
             }
             reader.Close();
+        }
+
+        protected void imgBtn_shoppingCart_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("ShoppingCart.aspx");
+        }
+
+        protected void imgBtn_logo_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("MainPage.aspx");
         }
     }
 }

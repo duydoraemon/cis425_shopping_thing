@@ -30,7 +30,7 @@
                 <table class="auto-style1">
                     <tr>
                         <td class="auto-style33">
-                            <asp:Image ID="Image1" runat="server" Height="86px" ImageUrl="~/userDefinedImages/companyLogo.png" Width="119px" CssClass="auto-style24" />
+                            <asp:ImageButton ID="imgBtn_logo" runat="server" ImageUrl="~/userDefinedImages/companyLogo.png" OnClick="imgBtn_logo_Click" />
                         </td>
                         <td class="auto-style25" colspan="2">
                             <asp:TextBox ID="TextBox1" runat="server" Width="850px" Height="33px"></asp:TextBox>
@@ -41,7 +41,7 @@
                         <td class="auto-style34">
                             <span class="auto-style24">&nbsp;&nbsp;&nbsp;
                             </span>
-                            <asp:ImageButton ID="ImageButton1" runat="server" Height="41px" ImageUrl="~/userDefinedImages/shoppingCartBlue.jpg" Width="49px" CssClass="auto-style24" />
+                            <asp:ImageButton ID="imgBtn_shoppingCart" runat="server" Height="41px" ImageUrl="~/userDefinedImages/shoppingCartBlue.jpg" Width="49px" CssClass="auto-style24" OnClick="imgBtn_shoppingCart_Click" />
                         &nbsp;<br class="auto-style24" />
                             <span class="auto-style24">&nbsp;&nbsp; Cart</span></td>
                     </tr>
@@ -91,7 +91,6 @@
                     </tr>
                     <tr>
                         <td class="auto-style26" colspan="2">
-                            <asp:Button ID="btn_test" runat="server" Text="Button" />
 &nbsp;</td>
                         <td class="auto-style24">&nbsp;</td>
                     </tr>
