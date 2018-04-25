@@ -44,8 +44,10 @@ namespace shopping_thing2
                 int labelCount = 1;
 
                 ImageButton newButton = new ImageButton();
-                Label newLabel = new Label();
+                HyperLink newLabel = new HyperLink();
                 CheckBox newCheckBox = new CheckBox();
+
+                 
 
                 checkboxCartList.Add(newCheckBox);
 
@@ -101,6 +103,7 @@ namespace shopping_thing2
                 }
                 newButton.Height = 155; newButton.Width = 155;
                 newLabel.Height = 155; newLabel.Width = 495;
+                newLabel.NavigateUrl = "ContactPage.aspx";
                 buttonCount++;
                 labelCount++;
 
