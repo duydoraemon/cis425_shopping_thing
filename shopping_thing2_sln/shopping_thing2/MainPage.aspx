@@ -12,7 +12,7 @@
             height: 103px;
         }
         .auto-style34 {
-            <!--width: 274px;-->
+            <width: 274px;
 
 
         }
@@ -109,7 +109,9 @@
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td class="auto-style17">&nbsp;</td>
+                        <td class="auto-style17">
+                            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="ShoppingCart.aspx">HyperLink</asp:HyperLink>
+                        </td>
                     </tr>
                     <tr>
                         <td class="auto-style11">
