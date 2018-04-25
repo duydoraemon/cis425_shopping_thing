@@ -148,6 +148,8 @@
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="MainPage.aspx" />
     <Content Include="Pictures\125-fall-in-love.png" />
+    <Content Include="Pictures\House.png" />
+    <Content Include="Pictures\images.jpg" />
     <Content Include="Pictures\product-placeholder.png" />
     <Content Include="Pictures\productPlaceholder.png" />
     <Content Include="Pictures\searchImage.png" />

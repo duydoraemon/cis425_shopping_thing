@@ -21,7 +21,7 @@ namespace shopping_thing2
         {
             RetriveInfoFromDatabase();
 
-            productCartList = (List<Product>)Session[productCartList.ToString()];
+            productCartList = (List<Product>)Session["productCartList"];
 
             for (int i = 0; i < productCartList.Count; i++)
             {
@@ -212,6 +212,11 @@ namespace shopping_thing2
                 list_product.Add(tmpProduct);
             }
             reader.Close();
+        }
+
+        protected void img_shoppingCart_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("MainPage.aspx", true);
         }
     }
 }

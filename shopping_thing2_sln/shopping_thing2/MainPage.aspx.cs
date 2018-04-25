@@ -186,8 +186,8 @@ namespace shopping_thing2
         protected void addToCartButton4_Click(object sender, EventArgs e)
         {
             
-            Session[productCartList.ToString()] = productCartList;
-            Response.Redirect("ShoppingCart.aspx");
+            Session["productCartList"] = productCartList;
+            Response.Redirect("ShoppingCart.aspx", true);
         }
 
         public void AddToCart(List<CheckBox> checkboxCartList)

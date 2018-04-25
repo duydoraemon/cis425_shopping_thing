@@ -59,7 +59,7 @@
                         <td class="auto-style9">
                             <span class="auto-style24">&nbsp;&nbsp;&nbsp;
                             </span>
-                            <asp:ImageButton ID="img_shoppingCart" runat="server" Height="41px" ImageUrl="~/userDefinedImages/shoppingCartBlue.jpg" Width="49px" CssClass="auto-style24" />
+                            <asp:ImageButton ID="img_shoppingCart" runat="server" Height="56px" ImageUrl="~/Pictures/House.png" Width="65px" CssClass="auto-style24" OnClick="img_shoppingCart_Click" />
                         &nbsp;<br class="auto-style24" />
                             <span class="auto-style24">&nbsp;&nbsp;&nbsp; Home</span></td>
                     </tr>
@@ -92,9 +92,9 @@
                                 <asp:Label ID="lbl_total" runat="server" Text="lbl_total"></asp:Label>
                             </h4>
                             <p>
-                            <asp:Button ID="addToCartButton3" runat="server" Text="Checkout" Width="150px" Height="40px" OnClick="addToCartButton3_Click" />
+                            <asp:Button ID="addToCartButton3" runat="server" Text="Checkout" Width="150px" Height="40px" OnClick="addToCartButton3_Click" BackColor="#66FF33" />
                             </p>
-                            <asp:Button ID="Button1" runat="server" Text="Remove From Cart" Height="40px" Width="150px" />
+                            <asp:Button ID="Button1" runat="server" Text="Remove From Cart" Height="40px" Width="150px" BackColor="Red" />
                         </td>
                     </tr>
                     <tr>
