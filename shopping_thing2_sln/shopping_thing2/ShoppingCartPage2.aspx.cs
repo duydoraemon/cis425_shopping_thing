@@ -18,6 +18,8 @@ namespace shopping_thing2
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            checkoutLbl.Visible = false;
+
             double subTotal = CalculateTotal();
             double salesTax = .056;
             double taxTotal;
@@ -42,7 +44,7 @@ namespace shopping_thing2
 
                 newButton.ID = "newButton" + buttonCount;
                 newLabel.ID = "newLabel" + labelCount;
-                newLabel.Text = $"Name:  {list_product[i].ProductName} <br> Price:  ${list_product[i].ProductPrice} <br> Description:  {list_product[i].ProductDescription};//<br><br><br><br><br><br> ";
+                newLabel.Text = $"Name: {list_product[i].ProductName} <br> Description: {list_product[i].ProductDescription} <br> Price: ${list_product[i].ProductPrice} <br><br><br><br><br><br> ";
 
                 int int_productID = Convert.ToInt32(list_product[i].ProductID);
 
@@ -203,7 +205,7 @@ namespace shopping_thing2
             conn.Open();
 
             //populates query
-            query = "delete from productCart";
+            query = "delete from productcart";
 
             //runs Query
             //creates command and reader object using query string and connection
@@ -211,7 +213,10 @@ namespace shopping_thing2
             var reader = cmd.ExecuteReader();
             reader.Close();
 
-            Response.Write("<script>alert('Your purchase has been canceled');</script>");
+            checkoutLbl.Visible = true;
+            checkoutLbl.ForeColor = System.Drawing.Color.Red;
+            checkoutLbl.Font.Size = 15;
+            checkoutLbl.Text = "Your purchase has been cancelled.";
 
             panel_label.Visible = false;
             panel_test.Visible = false;
@@ -288,7 +293,7 @@ namespace shopping_thing2
                 conn.Open();
 
                 //populates query
-                query = "delete from productCart";
+                query = "delete from productcart";
 
                 //runs Query
                 //creates command and reader object using query string and connection

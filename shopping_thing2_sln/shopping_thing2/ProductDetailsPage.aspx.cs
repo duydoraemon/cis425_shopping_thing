@@ -35,7 +35,7 @@ namespace shopping_thing2
 
             newImage.ID = "newImage" + imageCount;
             newLabel.ID = "newLabel" + labelCount;
-            newLabel.Text = $"Name:  {product.ProductName} <br> Price:  ${product.ProductPrice} <br> Description:  {product.ProductDescription};//<br><br><br><br><br><br> ";
+            newLabel.Text = $"Name: {product.ProductName} <br> Description: {product.ProductDescription} <br> Price: ${product.ProductPrice} <br><br><br><br><br><br> ";
 
             switch (product.RecNumber)
             {

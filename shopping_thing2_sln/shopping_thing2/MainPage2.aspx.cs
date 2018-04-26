@@ -18,7 +18,12 @@ namespace shopping_thing2
          * make jquery string to pass information to ProductDetailsPage */
         protected void Page_Load(object sender, EventArgs e)
         {
+            Image1.Visible = true;
+            aboutLbl.Visible = true;
             RetriveInfoFromDatabase();
+            aboutLbl.Text = "We are the Unkown company. Our company was created by a group of uncreative individuals who refused to come up with a creative name. Unkown sells a variety of sports products from four major types of sports: Baseball, Hockey, Football, and Lacrosse. We thank you for shopping on our website and hope you find everything that you need.";
+            panel_label.Visible = false;
+            panel_test.Visible = false;
 
             int buttonCount = 1;
             int hyperLinkCount = 1;
@@ -31,7 +36,7 @@ namespace shopping_thing2
                 newButton.ImageAlign = ImageAlign.TextTop;
                 newButton.ID = "newButton" + buttonCount;
                 newHyperLink.ID = "newHyperLink" + hyperLinkCount;
-                newHyperLink.Text = $"Name:  {list_product[i].ProductName} <br> Price:  ${list_product[i].ProductPrice} <br> Description:  {list_product[i].ProductDescription};//<br><br><br><br><br><br> ";
+                newHyperLink.Text = $"Name: {list_product[i].ProductName} <br> Description: {list_product[i].ProductDescription} <br> Price: ${list_product[i].ProductPrice}<br><br><br><br><br><br> ";
 
                 switch (list_product[i].RecNumber)
                 {
@@ -119,6 +124,8 @@ namespace shopping_thing2
             if (txt_search.Text != "")
             {
                 RetriveInfoFromDatabase();
+                Image1.Visible = false;
+                aboutLbl.Visible = false;
                 panel_label.Visible = true;
                 panel_test.Visible = true;
             }
@@ -135,6 +142,8 @@ namespace shopping_thing2
         //makes panels visible for user
         protected void imgBtn_search_Click(object sender, ImageClickEventArgs e)
         {
+            Image1.Visible = false;
+            aboutLbl.Visible = false;
             panel_label.Visible = true;
             panel_test.Visible = true;
             txt_search.Text = "";
@@ -212,5 +221,9 @@ namespace shopping_thing2
             reader.Close();
         }
 
+        protected void imgBtn_logo_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("MainPage2.aspx", true);
+        }
     }
 }

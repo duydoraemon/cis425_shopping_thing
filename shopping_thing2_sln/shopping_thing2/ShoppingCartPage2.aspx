@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ShoppingMaster.Master" AutoEventWireup="true" CodeBehind="ShoppingCartPage2.aspx.cs" Inherits="shopping_thing2.ShoppingCartPage2" %>
+﻿<%@ Page Title="Shopping Cart" Language="C#" MasterPageFile="~/ShoppingMaster.Master" AutoEventWireup="true" CodeBehind="ShoppingCartPage2.aspx.cs" Inherits="shopping_thing2.ShoppingCartPage2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style35 {

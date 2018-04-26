@@ -1,9 +1,15 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ShoppingMaster.Master" AutoEventWireup="true" CodeBehind="MainPage2.aspx.cs" Inherits="shopping_thing2.MainPage2" %>
+﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/ShoppingMaster.Master" AutoEventWireup="true" CodeBehind="MainPage2.aspx.cs" Inherits="shopping_thing2.MainPage2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style35 {
             width: 100%;
             height: 184px;
+        }
+        .auto-style36 {
+            text-align: center;
+        }
+        .auto-style37 {
+            text-align: left;
         }
     </style>
 </asp:Content>
@@ -13,7 +19,7 @@
                         <td class="auto-style2">
                             <asp:ImageButton ID="imgBtn_logo" runat="server" Height="113px" ImageUrl="~/userDefinedImages/CompanyLogo2.png" Width="164px" />
                         </td>
-                        <td class="auto-style10">
+                        <td class="auto-style10" colspan="2">
                             <h4>
                             <asp:TextBox ID="txt_search" runat="server" Width="871px" Height="33px"></asp:TextBox>
                             <br class="auto-style24" />
@@ -55,19 +61,29 @@
                             <span class="auto-style24">Contacts</span></span></h3>
                             <span class="auto-style24">&nbsp;</span></td>
 
-                        <td class="auto-style11" rowspan="9">
+                        <td class="auto-style11" rowspan="9" colspan="2">
                             <table class="auto-style35">
                                 <tr>
-                                    <td class="auto-style34">
+                                    <td class="auto-style36">
+                                        <div class="auto-style37">
                                         <asp:Panel ID="panel_test" runat="server" Height="169px" Width="285px">
                                         </asp:Panel>
                                     
                                     
+                                        </div>
+                                    
+                                    
+                                        <asp:Image ID="Image1" runat="server" Height="217px" ImageAlign="Middle" ImageUrl="~/Pictures/about-us.jpg" Width="572px" />
+                                        <br />
+                                        <br />
+                                        <asp:Label ID="aboutLbl" runat="server" Text="Label"></asp:Label>
                                     </td>
-                                    <td class="auto-style34">
+                                    <td>
                                     
                                     
                                         <asp:Panel ID="panel_label" runat="server" Height="169px" Width="495px">
+                                            <div class="auto-style37">
+                                            </div>
                                         </asp:Panel>
                                    
                                     </td>
@@ -101,20 +117,25 @@
                         <td class="auto-style27">&nbsp;</td>
                     </tr>
                     <tr>
-                        <td class="auto-style11">&nbsp;</td>
+                        <td class="auto-style11">
+                                        &nbsp;</td>
+                        <td class="auto-style11">
+                                    
+                                    
+                                        &nbsp;</td>
                         <td class="auto-style27">&nbsp;</td>
                     </tr>
                     <tr>
-                        <td class="auto-style11">&nbsp;</td>
+                        <td class="auto-style11" colspan="2">&nbsp;</td>
                         <td class="auto-style27">&nbsp;</td>
                     </tr>
                     <tr>
-                        <td class="auto-style19">
+                        <td class="auto-style19" colspan="2">
                             &nbsp;</td>
                         <td class="auto-style27">&nbsp;</td>
                     </tr>
                     <tr>
-                        <td class="auto-style25">
+                        <td class="auto-style25" colspan="2">
                         </td>
                         <td class="auto-style26"></td>
                     </tr>

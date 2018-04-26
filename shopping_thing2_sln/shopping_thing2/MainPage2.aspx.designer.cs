@@ -76,6 +76,24 @@ namespace shopping_thing2 {
         protected global::System.Web.UI.WebControls.Panel panel_test;
         
         /// <summary>
+        /// Image1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image1;
+        
+        /// <summary>
+        /// aboutLbl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label aboutLbl;
+        
+        /// <summary>
         /// panel_label control.
         /// </summary>
         /// <remarks>
