@@ -75,7 +75,7 @@
                     </tr>
                     <tr>
                         <td class="auto-style27">
-                                        <asp:Button ID="addBtn" runat="server" OnClick="addBtn_Click" Text="Add to Cart" BackColor="#66FF33" />
+                                        <asp:Button ID="addBtn" runat="server" OnClick="addBtn_Click" Text="Add to Cart" BackColor="#99FF99" />
                                     
                                     
                                     </td>

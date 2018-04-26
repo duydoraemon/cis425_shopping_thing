@@ -130,12 +130,10 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="Contact.aspx" />
-    <Content Include="ContactPage.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
-    <Content Include="DuyTestingForm.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -146,7 +144,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="MainPage.aspx" />
     <Content Include="MainPage2.aspx" />
     <Content Include="Pictures\125-fall-in-love.png" />
     <Content Include="Pictures\House.png" />
@@ -183,7 +180,6 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
-    <Content Include="ShoppingCart.aspx" />
     <Content Include="ShoppingCartPage2.aspx" />
     <Content Include="Site.Master" />
     <Content Include="userDefinedImages\baseball.jpg" />
@@ -231,13 +227,6 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ContactPage.aspx.cs">
-      <DependentUpon>ContactPage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ContactPage.aspx.designer.cs">
-      <DependentUpon>ContactPage.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -245,22 +234,8 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DuyTestingForm.aspx.cs">
-      <DependentUpon>DuyTestingForm.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DuyTestingForm.aspx.designer.cs">
-      <DependentUpon>DuyTestingForm.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="MainPage.aspx.cs">
-      <DependentUpon>MainPage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="MainPage.aspx.designer.cs">
-      <DependentUpon>MainPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="MainPage2.aspx.cs">
       <DependentUpon>MainPage2.aspx</DependentUpon>
@@ -278,13 +253,6 @@
       <DependentUpon>ProductDetailsPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ShoppingCart.aspx.cs">
-      <DependentUpon>ShoppingCart.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ShoppingCart.aspx.designer.cs">
-      <DependentUpon>ShoppingCart.aspx</DependentUpon>
-    </Compile>
     <Compile Include="ShoppingCartPage2.aspx.cs">
       <DependentUpon>ShoppingCartPage2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

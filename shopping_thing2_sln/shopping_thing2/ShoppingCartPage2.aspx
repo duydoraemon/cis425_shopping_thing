@@ -131,7 +131,7 @@
                     </tr>
                     <tr>
                         <td class="auto-style38">
-                            <asp:Button ID="btn_checkout" runat="server" BackColor="#66FF33" Height="40px" OnClick="btn_checkout_Click" Text="Checkout" Width="150px" />
+                            <asp:Button ID="btn_checkout" runat="server" BackColor="#99FF99" Height="40px" OnClick="btn_checkout_Click" Text="Checkout" Width="150px" />
                         </td>
                     </tr>
                     <tr>
@@ -139,7 +139,7 @@
                     </tr>
                     <tr>
                         <td class="auto-style36">
-                            <asp:Button ID="btn_cancel" runat="server" BackColor="Red" Height="40px" OnClick="btn_cancel_Click" Text="Cancel Purchase" Width="150px" />
+                            <asp:Button ID="btn_cancel" runat="server" BackColor="#FF3E3E" Height="40px" OnClick="btn_cancel_Click" Text="Cancel Purchase" Width="150px" />
                         </td>
                     </tr>
                     <tr>

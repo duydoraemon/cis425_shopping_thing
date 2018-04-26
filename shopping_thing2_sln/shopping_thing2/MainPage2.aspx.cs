@@ -20,9 +20,6 @@ namespace shopping_thing2
         {
             RetriveInfoFromDatabase();
 
-            //panel_test.Visible = false;
-            //panel_label.Visible = false;
-
             int buttonCount = 1;
             int hyperLinkCount = 1;
             //displays the items, passes information
