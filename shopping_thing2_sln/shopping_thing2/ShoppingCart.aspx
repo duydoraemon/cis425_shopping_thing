@@ -7,10 +7,11 @@
             color: #000000;
         }
         .auto-style25 {
-            width: 598px;
-            height: 95px;
-            text-align: right;
-        }
+        width: 879px;
+        height: 214px;
+        text-align: right;
+        color: #000000;
+    }
         .auto-style26 {
             width: 598px;
             color: #000000;
@@ -27,7 +28,7 @@
             height: 45px;
         }
         .auto-style41 {
-            height: 95px;
+            height: 214px;
             text-align: left;
             width: 268435408px;
         }
@@ -35,6 +36,12 @@
             color: #000000;
             width: 268435408px;
         }
+        .auto-style43 {
+        width: 153px;
+        height: 214px;
+        text-align: center;
+        background-color: #E6E6FF;
+    }
         </style>
 </asp:Content>
 
@@ -42,7 +49,7 @@
 <asp:Content ID="Content2" runat="server" contentplaceholderid="ContentPlaceHolder1">
                 <table class="auto-style1">
                     <tr>
-                        <td class="auto-style2">
+                        <td class="auto-style43">
                             <asp:ImageButton ID="imgBtn_logo" runat="server" Height="77px" ImageUrl="~/userDefinedImages/companyLogo.png" OnClick="imgBtn_logo_Click1" Width="111px" />
                         </td>
                         <td class="auto-style25" colspan="3">

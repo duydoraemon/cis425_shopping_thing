@@ -1,97 +1,11 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ShoppingMaster.master.cs" Inherits="shopping_thing2.ShoppingMaster" %>
-
-<!DOCTYPE html>
-
-<html>
-<head runat="server">
-    <title></title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
-    <style type="text/css">
-        .auto-style1 {
-            width: 100%;
-        }
-        .auto-style2 {
-            width: 153px;
-            height: 95px;
-            text-align: center;
-            background-color: #E6E6FF;
-        }
-        .auto-style4 {
-            width: 153px;
-            text-align: center;
-            color: #000000;
-            background-color: #E6E6FF;
-            font-family: "Baskerville Old Face";
-        }
-        .auto-style9 {
-            height: 95px;
-            text-align: left;
-            background-color: #E6E6FF;
-            width: 685px;
-        }
-        .auto-style10 {
-            width: 879px;
-            height: 95px;
-            text-align: right;
-            background-color: #E6E6FF;
-            font-family: "Baskerville Old Face";
-        }
-        .auto-style11 {
-            width: 879px;
-            color: #000000;
-        }
-        .auto-style13 {
-            height: 26px;
-            width: 685px;
-        }
-        .newStyle1 {
-            top: 1px;
-        }
-        .newStyle2 {
-            top: 23px;
-        }
-        .auto-style17 {
-            height: 48px;
-            width: 685px;
-        }
-        .auto-style19 {
-            width: 879px;
-            text-align: center;
-            color: #000000;
-        }
-        .auto-style24 {
-            color: #000000;
-        }
-        .auto-style25 {
-            width: 879px;
-            color: #000000;
-            height: 1033px;
-        }
-        .auto-style26 {
-            color: #000000;
-            height: 1033px;
-            width: 685px;
-        }
-        .auto-style27 {
-            color: #000000;
-            width: 685px;
-        }
-        .auto-style34 {
-            <width: 274px;
-
-
-        }
-        </style>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ShoppingMaster.Master" AutoEventWireup="true" CodeBehind="ProductDetailsPage.aspx.cs" Inherits="shopping_thing2.ProductDetailsPage" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" runat="server" contentplaceholderid="ContentPlaceHolder1">
                 <table class="auto-style1">
                     <tr>
                         <td class="auto-style2">
-                            <asp:ImageButton ID="imgBtn_logo" runat="server" Height="113px" ImageUrl="~/userDefinedImages/CompanyLogo2.png" Width="164px" />
+                            <asp:ImageButton ID="imgBtn_logo" runat="server" Height="113px" ImageUrl="~/userDefinedImages/CompanyLogo2.png" OnClick="imgBtn_logo_Click" Width="164px" />
                         </td>
                         <td class="auto-style10">
                             <h4>
@@ -110,13 +24,13 @@
                                     <asp:ListItem Value="L2H">Low to High</asp:ListItem>
                                     <asp:ListItem Value="H2L">High to Low</asp:ListItem>
                             </asp:DropDownList>
-                            &nbsp;<asp:ImageButton ID="imgBtn_search" runat="server" ImageUrl="~/Pictures/searchImage.png" Width="30px" />
+                            &nbsp;<asp:ImageButton ID="imgBtn_search" runat="server" ImageUrl="~/Pictures/searchImage.png" Width="30px" OnClick="imgBtn_search_Click" />
                             </h4>
                         </td>
                         <td class="auto-style9">
                             <span class="auto-style24">&nbsp;&nbsp;&nbsp;
                             </span>
-                            <asp:ImageButton ID="img_shoppingCart" runat="server" Height="46px" ImageUrl="~/userDefinedImages/shoppingCartBlue.jpg" Width="55px" CssClass="auto-style24" />
+                            <asp:ImageButton ID="img_shoppingCart" runat="server" Height="46px" ImageUrl="~/userDefinedImages/shoppingCartBlue.jpg" Width="55px" CssClass="auto-style24" OnClick="img_shoppingCart_Click" />
                         &nbsp;<br class="auto-style24" />
                             <span class="auto-style24">&nbsp;&nbsp; </span></td>
                     </tr>
@@ -160,7 +74,11 @@
                         <td class="auto-style27">&nbsp;</td>
                     </tr>
                     <tr>
-                        <td class="auto-style27">&nbsp;</td>
+                        <td class="auto-style27">
+                                        <asp:Button ID="addBtn" runat="server" OnClick="addBtn_Click" Text="Add to Cart" BackColor="#66FF33" />
+                                    
+                                    
+                                    </td>
                     </tr>
                     <tr>
                         <td class="auto-style17">&nbsp;</td>
@@ -199,9 +117,5 @@
                         <td class="auto-style26"></td>
                     </tr>
                     </table>
-            </asp:ContentPlaceHolder>
-            <br />
-        </div>
-    </form>
-</body>
-</html>
+            </asp:Content>
+
