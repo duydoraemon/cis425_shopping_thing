@@ -221,6 +221,9 @@ namespace shopping_thing2
             panel_label.Visible = false;
             panel_test.Visible = false;
             //panel_checkBox.Visible = false;
+            lbl_sTotal.Text = "$0.00";
+            lbl_tax.Text = "$0.00";
+            lbl_total.Text = "$0.00";
         }
 
         //accesses database to sum up all the prices in the product cart table
@@ -308,6 +311,9 @@ namespace shopping_thing2
                 panel_label.Visible = false;
                 panel_test.Visible = false;
                 //panel_checkBox.Visible = false;
+                lbl_sTotal.Text = "$0.00";
+                lbl_tax.Text = "$0.00";
+                lbl_total.Text = "$0.00";
             }
         }
 
