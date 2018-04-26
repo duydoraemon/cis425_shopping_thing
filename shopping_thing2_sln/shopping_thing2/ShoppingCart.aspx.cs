@@ -20,6 +20,7 @@ namespace shopping_thing2
          * retrieves info from database to display */
         protected void Page_Load(object sender, EventArgs e)
         {
+
             double subTotal = CalculateTotal();
             double salesTax = .056;
             double taxTotal;
@@ -290,8 +291,9 @@ namespace shopping_thing2
             var reader = cmd.ExecuteReader();
             reader.Close();
 
-
-            Response.Write("<script>alert('Good job Soumya! You are still a poop tho');</script>");
+            checkoutLbl.Visible = true;
+            //Response.Write("<script>alert('Good job Soumya! You are still a poop tho');</script>");
+            checkoutLbl.Text = "Purchase Successful! Thank you for shopping with us";
             panel_label.Visible = false;
             panel_test.Visible = false;
             panel_checkBox.Visible = false;

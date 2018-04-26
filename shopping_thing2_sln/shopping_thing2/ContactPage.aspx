@@ -33,10 +33,10 @@
                             <asp:ImageButton ID="imgBtn_logo" runat="server" ImageUrl="~/userDefinedImages/companyLogo.png" OnClick="imgBtn_logo_Click" />
                         </td>
                         <td class="auto-style25" colspan="2">
-                            <asp:TextBox ID="TextBox1" runat="server" Width="850px" Height="33px"></asp:TextBox>
+                            <asp:TextBox ID="txt_search" runat="server" Width="850px" Height="33px"></asp:TextBox>
                             <br class="auto-style24" />
                             <br />
-                            <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/Pictures/searchImage.png" Width="30px" />
+                            <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/Pictures/searchImage.png" Width="30px" OnClick="ImageButton2_Click" />
                         </td>
                         <td class="auto-style34">
                             <span class="auto-style24">&nbsp;&nbsp;&nbsp;
@@ -72,7 +72,7 @@
                                     
                                     </td>
                         <td class="auto-style26">
-                                        <asp:Button ID="addBtn" runat="server" OnClick="addBtn_Click" Text="Add to Cart" />
+                                        <asp:Button ID="addBtn" runat="server" OnClick="addBtn_Click" Text="Add to Cart" BackColor="#66FF33" />
                                     
                                     
                                     </td>

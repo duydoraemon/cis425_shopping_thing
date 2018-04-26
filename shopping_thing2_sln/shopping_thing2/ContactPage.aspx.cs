@@ -17,7 +17,8 @@ namespace shopping_thing2
          * displays the correct item images and label */
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            //preset button text
+            addBtn.Text = "Add to Cart";
             //receives query string from main page
             string recNumber = Request.QueryString["recNumber"];
             //checks string against database
@@ -160,6 +161,7 @@ namespace shopping_thing2
         /* runs query to insert the item on the page to database */
         protected void addBtn_Click(object sender, EventArgs e)
         {
+            addBtn.Text = "Added to Cart";
             string query = "";
 
             //establishes connection with server
@@ -204,6 +206,15 @@ namespace shopping_thing2
         protected void imgBtn_logo_Click(object sender, ImageClickEventArgs e)
         {
             Response.Redirect("MainPage.aspx");
+        }
+        //search button click event
+        protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
+        {
+            //redirect to main page
+            //save txt_search.Text in Session   
+            Session["searchText"] = txt_search.Text;
+
+            Response.Redirect("MainPage.aspx", true);
         }
     }
 }

@@ -91,6 +91,9 @@
                             <asp:Button ID="btn_checkout" runat="server" Text="Checkout" Width="150px" Height="40px" OnClick="btn_checkout_Click" BackColor="#66FF33" />
                             </p>
                             <asp:Button ID="btn_cancel" runat="server" Text="Cancel Purchase" Height="40px" Width="150px" BackColor="Red" OnClick="btn_cancel_Click" />
+                            <br />
+                            <br />
+                            <asp:Label ID="checkoutLbl" runat="server" Font-Names="Arial" Font-Size="Small" Text="Label" Visible="False"></asp:Label>
                         </td>
                     </tr>
                     <tr>
