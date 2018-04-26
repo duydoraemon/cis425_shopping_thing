@@ -92,6 +92,11 @@
                                         </asp:Panel>
                                     
                                     
+                                        <h3>
+                                            <asp:Label ID="checkoutLbl" runat="server" Font-Names="Arial" Font-Size="Small" Text="Label" Visible="False"></asp:Label>
+                                        </h3>
+                                    
+                                    
                                     </td>
                                     <td class="auto-style34">
                                     
@@ -107,7 +112,7 @@
                     </tr>
                     <tr>
                         <td class="auto-style36">
-                            <h4>Subtotal:
+                            <h4>Subtotal: 
                                 <asp:Label ID="lbl_sTotal" runat="server" Text="lbl_sTotal"></asp:Label>
                                 &nbsp;</h4>
                         </td>
@@ -145,7 +150,6 @@
                     <tr>
                         <td class="auto-style41">
                             <br />
-                            <asp:Label ID="checkoutLbl" runat="server" Font-Names="Arial" Font-Size="Small" Text="Label" Visible="False"></asp:Label>
                         </td>
                     </tr>
                     <tr>

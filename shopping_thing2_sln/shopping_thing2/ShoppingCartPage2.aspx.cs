@@ -263,34 +263,47 @@ namespace shopping_thing2
 
         protected void btn_checkout_Click(object sender, EventArgs e)
         {
-            string query;
+            if (lbl_sTotal.Text == "$0.00")
+            {
+                checkoutLbl.Visible = true;
+                checkoutLbl.ForeColor = System.Drawing.Color.Red;
+                checkoutLbl.Font.Size = 15;
+                checkoutLbl.Text = "Your shopping cart is empty. Please select products to checkout.";
+                panel_label.Visible = false;
+                panel_test.Visible = false;
+            }
 
-            //establishes connection with server
-            string dbServer = "cis425.wpcarey.asu.edu"; //"<Server IP or Hostname>"
-            string username = "dhua5";      // "<DB username>"
-            string password = "glassGATE56";      // "<DB password>"
-            string dbName = "groupb04";  // "<DB name>"
-            string dbConnectionString = string.Format("server={0};uid={1};pwd={2};database={3};",
-                            dbServer, username, password, dbName);
-            var conn = new MySql.Data.MySqlClient.MySqlConnection(dbConnectionString);
-            conn.Open();
+            else
+            {
+                string query;
 
-            //populates query
-            query = "delete from productCart";
+                //establishes connection with server
+                string dbServer = "cis425.wpcarey.asu.edu"; //"<Server IP or Hostname>"
+                string username = "dhua5";      // "<DB username>"
+                string password = "glassGATE56";      // "<DB password>"
+                string dbName = "groupb04";  // "<DB name>"
+                string dbConnectionString = string.Format("server={0};uid={1};pwd={2};database={3};",
+                                dbServer, username, password, dbName);
+                var conn = new MySql.Data.MySqlClient.MySqlConnection(dbConnectionString);
+                conn.Open();
 
-            //runs Query
-            //creates command and reader object using query string and connection
-            var cmd = new MySql.Data.MySqlClient.MySqlCommand(query, conn);
-            var reader = cmd.ExecuteReader();
-            reader.Close();
+                //populates query
+                query = "delete from productCart";
 
-            checkoutLbl.Visible = true;
-            //Response.Write("<script>alert('Good job Soumya! You are still a poop tho');</script>");
-            checkoutLbl.Text = "Purchase Successful! Thank you for shopping with us";
-            panel_label.Visible = false;
-            panel_test.Visible = false;
-            //panel_checkBox.Visible = false;
+                //runs Query
+                //creates command and reader object using query string and connection
+                var cmd = new MySql.Data.MySqlClient.MySqlCommand(query, conn);
+                var reader = cmd.ExecuteReader();
+                reader.Close();
 
+                checkoutLbl.Visible = true;
+                checkoutLbl.ForeColor = System.Drawing.Color.Green;
+                checkoutLbl.Font.Size = 24;
+                checkoutLbl.Text = "Purchase Successful! Thank you for shopping with us!";
+                panel_label.Visible = false;
+                panel_test.Visible = false;
+                //panel_checkBox.Visible = false;
+            }
         }
 
         protected void imgBtn_search_Click(object sender, ImageClickEventArgs e)

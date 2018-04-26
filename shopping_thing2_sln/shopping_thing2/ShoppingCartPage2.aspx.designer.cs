@@ -76,6 +76,15 @@ namespace shopping_thing2 {
         protected global::System.Web.UI.WebControls.Panel panel_test;
         
         /// <summary>
+        /// checkoutLbl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label checkoutLbl;
+        
+        /// <summary>
         /// panel_label control.
         /// </summary>
         /// <remarks>
@@ -128,14 +137,5 @@ namespace shopping_thing2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btn_cancel;
-        
-        /// <summary>
-        /// checkoutLbl control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label checkoutLbl;
     }
 }
